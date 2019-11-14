@@ -1,0 +1,6 @@
+cask
+go
+openssl
+peco
+python
+python3
