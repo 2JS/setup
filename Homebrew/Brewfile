@@ -36,6 +36,7 @@ brew "peco"
 brew "python"
 
 cask "atom"
+cask "couleurs"
 cask "dash"
 cask "docker"
 cask "github"
