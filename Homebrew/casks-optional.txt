@@ -1,5 +1,0 @@
-airfoil
-airserver
-google-chrome
-sublime-text
-vlc
