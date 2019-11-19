@@ -37,6 +37,7 @@ brew "go"
 brew "openssl"
 brew "peco"
 brew "python"
+brew "cocoapods"
 
 cask "atom"
 cask "couleurs"
