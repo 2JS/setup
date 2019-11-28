@@ -8,11 +8,13 @@ tap "homebrew/core"
 # Personal
 brew "mas"
 
+cask "aerial" # Screen Saver.
 cask "alfred"
-# cask "airfoil"
+cask "airfoil"
 # cask "airserver"
 cask "bartender"
 cask "bettertouchtool"
+cask "cheatsheet"
 cask "gitkraken"
 cask "movist-pro"
 cask "steam"
