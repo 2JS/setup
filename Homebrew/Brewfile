@@ -62,6 +62,7 @@ mas "2Icon", id: 1049625579
 # Fonts
 tap "homebrew/cask-fonts"
 cask "font-monoid"
+cask "font-fira-code"
 cask "font-noto-sans"
 cask "font-noto-sans-cjk"
 
