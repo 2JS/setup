@@ -39,6 +39,7 @@ mas "Speedtest", id: 1153157709
 mas "The Unarchiver", id: 425424353
 
 # Development
+brew "git"
 brew "go"
 brew "openssl"
 brew "peco"
