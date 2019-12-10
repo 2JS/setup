@@ -39,6 +39,7 @@ mas "The Unarchiver", id: 425424353
 
 # Development
 tap "homebrew/command-not-found"
+
 brew "cocoapods"
 brew "git"
 brew "go"
