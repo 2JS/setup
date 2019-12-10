@@ -1,5 +1,5 @@
 # Setup
-Almost Automated setup scripts for new macs
+Almost Automated setup scripts for new macs. Just like provisioning my mac.
 
 ## Usage
 
