@@ -19,7 +19,7 @@ bindkey '^x^e' edit-command-line
 
 # load peco commandline history
 # ref: https://www.44bits.io/ko/post/incremental-search-tool-peco
-source ~/.zsh/peco-history.zsh
+source ${HOME}/Developer/setup/zsh/peco-history.zsh
 
 # Setting GOPATH
 export GOPATH=$HOME/.go
