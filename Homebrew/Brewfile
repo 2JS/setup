@@ -47,6 +47,8 @@ brew "openssl"
 brew "peco"
 brew "python"
 brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
 
 cask "atom"
 cask "couleurs"
