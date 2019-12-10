@@ -109,6 +109,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # load custom environment
-source ${HOME}/Developer/setup/zsh/.zsh_custom
+source ${HOME}/Developer/setup/zsh/zsh_custom
 
 # test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/.iterm2_shell_integration.zsh"
