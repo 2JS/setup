@@ -10,7 +10,7 @@ brew "mas"
 
 cask "aerial" # Screen Saver.
 cask "alfred"
-cask "airfoil"
+# cask "airfoil"
 # cask "airserver"
 cask "bartender"
 cask "bettertouchtool"
