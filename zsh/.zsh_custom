@@ -1,3 +1,5 @@
+export SETUP="${HOME}/Developer/setup"
+
 # docker-compose shortcuts
 alias dco='docker-compose'
 alias dcb='docker-compose build'
@@ -14,15 +16,11 @@ alias dma='docker-machine'
 
 # load edit-commnad-line function
 # ref: https://www.44bits.io/ko/post/editing-multiline-command-on-shell
-autoload -U edit-command-line
-zle -N edit-command-line
-bindkey '^e' edit-command-line
-bindkey '^xe' edit-command-line
-bindkey '^x^e' edit-command-line
+source ${SETUP}/zsh/edit-command-line.zsh
 
 # load peco commandline history
 # ref: https://www.44bits.io/ko/post/incremental-search-tool-peco
-source ${HOME}/Developer/setup/zsh/peco-history.zsh
+source ${SETUP}/zsh/peco-history.zsh
 
 # Setting GOPATH
 export GOPATH=${HOME}/.go
@@ -30,7 +28,7 @@ export GOPATH=${HOME}/.go
 alias la='ls -a'
 
 export PATH=".:${PATH}"
-export EDITOR="vim"
+# export EDITOR="vim"
 
 # ref: https://github.com/Homebrew/homebrew-command-not-found
 if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
