@@ -32,3 +32,6 @@ export PATH=".:${PATH}"
 
 # ref: https://github.com/Homebrew/homebrew-command-not-found
 if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

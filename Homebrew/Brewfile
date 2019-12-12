@@ -49,6 +49,7 @@ brew "python"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
+brew "zsh-syntax-highlighting"
 
 cask "atom"
 cask "couleurs"
