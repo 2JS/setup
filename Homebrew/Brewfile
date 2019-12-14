@@ -65,8 +65,9 @@ cask "iterm2"
 cask "jetbrains-toolbox"
 cask "sequel-pro"
 
-mas "LittleIpsum", id: 405772121
 mas "2Icon", id: 1049625579
+mas "LittleIpsum", id: 405772121
+mas "Octotree Pro", id: 1457450145
 
 # Fonts
 tap "homebrew/cask-fonts"
