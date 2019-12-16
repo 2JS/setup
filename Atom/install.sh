@@ -1,5 +1,6 @@
 apm install \
-color-picker \
+build \
+linter \
 platformio-ide-terminal \
 remote-ftp \
 teletype \
