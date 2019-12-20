@@ -35,3 +35,8 @@ if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew comma
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status command_execution_time context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs direnv virtualenv anaconda pyenv nodenv nvm nodeenv rbenv rvm kubecontext terraform aws nordvpn ranger)
+
+POWERLEVEL9K_STATUS_OK=false
