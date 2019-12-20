@@ -23,7 +23,8 @@ source ${SETUP}/zsh/edit-command-line.zsh
 source ${SETUP}/zsh/peco-history.zsh
 
 # Setting GOPATH
-export GOPATH=${HOME}/.go
+export GOPATH=${HOME}/Developer/Go
+export GOPATH=${GOPATH}/bin
 
 alias la='ls -a'
 
