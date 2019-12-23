@@ -41,3 +41,4 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs background_jobs status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(direnv virtualenv anaconda pyenv nodenv nvm nodeenv rbenv rvm kubecontext terraform aws nordvpn ranger)
 
 POWERLEVEL9K_STATUS_OK=false
+POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=true
