@@ -24,7 +24,7 @@ source ${SETUP}/zsh/peco-history.zsh
 
 # Setting GOPATH
 export GOPATH=${HOME}/Developer/Go
-export GOPATH=${GOPATH}/bin
+export GOBIN=${GOPATH}/bin
 
 alias la='ls -a'
 
