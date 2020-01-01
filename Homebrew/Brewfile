@@ -54,6 +54,7 @@ brew "pstree"
 brew "python"
 brew "vim"
 brew "zsh"
+brew "zplug"
 
 cask "atom"
 cask "couleurs"
