@@ -116,6 +116,7 @@ export EDITOR='vim'
 
 # load custom environment
 source ${HOME}/Developer/setup/zsh/zplug.zsh
-source ${HOME}/Developer/setup/zsh/zsh_custom
+source ${HOME}/Developer/setup/zsh/custom.zsh
+source ${HOME}/Developer/setup/zsh/alias.zsh
 
 # test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/.iterm2_shell_integration.zsh"

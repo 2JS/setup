@@ -1,33 +1,17 @@
 SETUP="${HOME}/Developer/setup"
 ZSH_DISABLE_COMPFIX=true
 
-# docker-compose shortcuts
-alias dco='docker-compose'
-alias dcb='docker-compose build'
-alias dce='docker-compose exec'
-alias dcps='docker-compose ps'
-alias dcr='docker-compose run'
-alias dcup='docker-compose up'
-alias dcdn='docker-compose down'
-alias dcl='docker-compose logs'
-alias dclf='docker-compose logs -f'
-
-# docker-machine shortcuts
-alias dma='docker-machine'
-
 # load edit-commnad-line function
 # ref: https://www.44bits.io/ko/post/editing-multiline-command-on-shell
-source ${SETUP}/zsh/edit-command-line.zsh
+source ${SETUP}/zsh/functions/edit-command-line.zsh
 
 # load peco commandline history
 # ref: https://www.44bits.io/ko/post/incremental-search-tool-peco
-source ${SETUP}/zsh/peco-history.zsh
+source ${SETUP}/zsh/functions/peco-history.zsh
 
 # Setting GOPATH
 export GOPATH=${HOME}/Developer/Go
 export GOBIN=${GOPATH}/bin
-
-alias la='ls -a'
 
 export PATH=".:${PATH}"
 # export EDITOR="vim"
