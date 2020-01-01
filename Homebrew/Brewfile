@@ -58,7 +58,7 @@ brew "zplug"
 
 cask "atom"
 cask "couleurs"
-cask "dash"
+# cask "dash"
 cask "docker"
 cask "github"
 cask "gitkraken"
