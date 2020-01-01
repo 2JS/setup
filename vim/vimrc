@@ -59,7 +59,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Toggle File Tree
 map <C-\> :NERDTreeToggle<CR>
 " Vertical Split. Simulates New tab
-map <C-t> :vsp 
+map <C-t> :vsp
 
 let g:airline_theme='onedark'
 colorscheme onedark
