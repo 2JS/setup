@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone https://github.com/2JS/Setup/install.sh .setup
+git clone --depth=1 https://github.com/2JS/setup.git ~/Developer/setup
 
-./.setup/Homebrew/install.sh
-./.setup/Atom/install.sh
+# ./.setup/Homebrew/install.sh
+# ./.setup/Atom/install.sh
