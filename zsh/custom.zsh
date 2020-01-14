@@ -1,19 +1,19 @@
-SETUP="${HOME}/Developer/setup"
+SETUP="$HOME/.setup"
 ZSH_DISABLE_COMPFIX=true
 
 # load edit-commnad-line function
 # ref: https://www.44bits.io/ko/post/editing-multiline-command-on-shell
-source ${SETUP}/zsh/functions/edit-command-line.zsh
+source $SETUP/zsh/functions/edit-command-line.zsh
 
 # load peco commandline history
 # ref: https://www.44bits.io/ko/post/incremental-search-tool-peco
-source ${SETUP}/zsh/functions/peco-history.zsh
+source $SETUP/zsh/functions/peco-history.zsh
 
 # Setting GOPATH
-export GOPATH=${HOME}/Developer/Go
-export GOBIN=${GOPATH}/bin
+export GOPATH=$HOME/Developer/Go
+export GOBIN=$GOPATH/bin
 
-export PATH=".:${PATH}"
+export PATH=".:$PATH"
 # export EDITOR="vim"
 
 # ref: https://github.com/Homebrew/homebrew-command-not-found
