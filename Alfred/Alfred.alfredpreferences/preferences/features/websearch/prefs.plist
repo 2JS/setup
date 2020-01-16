@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>3236337B-3316-4338-96E2-6EC2C6594234</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>mw</string>
+			<key>text</key>
+			<string>Search mediawiki.org for '{query}'</string>
+			<key>url</key>
+			<string>https://www.mediawiki.org/w/index.php?title=Special:Search&amp;search={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>BB050D3C-30A2-41CD-BF23-4CD40DC7992B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wp</string>
+			<key>text</key>
+			<string>Search en.wikipedia.org for '{query}'</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/w/index.php?sort=relevance&amp;search={query}&amp;title=Special:Search&amp;profile=advanced</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>D1EFBCF1-0E6F-4028-B6EA-13021A981CE2</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>kw</string>
+			<key>text</key>
+			<string>카이스트 백과사전에서 {query} 찾기</string>
+			<key>url</key>
+			<string>https://student.kaist.ac.kr/wiki/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>F4931F1F-00CF-4947-8AC1-391701686513</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dockh</string>
+			<key>text</key>
+			<string>Docker Hub</string>
+			<key>url</key>
+			<string>https://hub.docker.com/search?q={query}&amp;type=image</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

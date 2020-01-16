@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>emptytrashKeywordEnabled</key>
+	<false/>
+	<key>quitallConfirm</key>
+	<true/>
+	<key>quitallKeywordEnabled</key>
+	<false/>
+	<key>restartConfirm</key>
+	<true/>
+	<key>showtrashKeywordEnabled</key>
+	<false/>
+	<key>shutdownConfirm</key>
+	<true/>
+	<key>volumedownKeywordEnabled</key>
+	<false/>
+	<key>volumemuteKeywordEnabled</key>
+	<false/>
+	<key>volumeupKeywordEnabled</key>
+	<false/>
+</dict>
+</plist>
