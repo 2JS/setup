@@ -17,6 +17,7 @@ cask "bettertouchtool"
 cask "cheatsheet"
 cask "ckan"
 cask "discord"
+cask "minecraft"
 cask "mono-mdk" # ckan dependency
 cask "hazeover"
 cask "movist-pro"
