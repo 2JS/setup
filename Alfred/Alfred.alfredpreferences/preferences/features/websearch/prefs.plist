@@ -56,6 +56,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>FAFB7441-7918-4864-B907-02F8886E770F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gh</string>
+			<key>text</key>
+			<string>Search {query} in GitHub</string>
+			<key>url</key>
+			<string>https://github.com/search?q={query}&amp;amp;ref=opensearch</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
