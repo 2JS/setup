@@ -48,7 +48,7 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>dockerhub</string>
+			<string>dh</string>
 			<key>text</key>
 			<string>Docker Hub</string>
 			<key>url</key>
