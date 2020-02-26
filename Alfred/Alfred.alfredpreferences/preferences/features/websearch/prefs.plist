@@ -22,11 +22,11 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>wp</string>
+			<string>kwk</string>
 			<key>text</key>
-			<string>Search en.wikipedia.org for '{query}'</string>
+			<string>Search ko.wikipedia.org for '{query}'</string>
 			<key>url</key>
-			<string>https://en.wikipedia.org/w/index.php?sort=relevance&amp;search={query}&amp;title=Special:Search&amp;profile=advanced</string>
+			<string>https://ko.wikipedia.org/w/index.php?sort=relevance&amp;search={query}&amp;title=Special:Search&amp;profile=advanced</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
