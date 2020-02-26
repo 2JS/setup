@@ -8,12 +8,13 @@
 	<array>
 		<string>features.websearch.google.fallback</string>
 		<string>features.websearch.wiki.fallback</string>
-		<string>features.websearch.custom.BB050D3C-30A2-41CD-BF23-4CD40DC7992B.fallback</string>
 		<string>features.websearch.gtranslate.fallback</string>
 		<string>features.websearch.youtube.fallback</string>
 	</array>
 	<key>fallbacksMode</key>
 	<integer>1</integer>
+	<key>showArchives</key>
+	<true/>
 	<key>showContactsUsingMetadata</key>
 	<true/>
 	<key>showDocuments</key>
@@ -21,8 +22,6 @@
 	<key>showFolders</key>
 	<true/>
 	<key>showImages</key>
-	<true/>
-	<key>showTextFiles</key>
 	<true/>
 </dict>
 </plist>
