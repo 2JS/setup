@@ -15,17 +15,18 @@ cask "alfred"
 cask "bartender"
 cask "bettertouchtool"
 cask "cheatsheet"
-cask "ckan"
+# cask "ckan"
 cask "discord"
 cask "minecraft"
-cask "mono-mdk" # ckan dependency
+# cask "mono-mdk" # ckan dependency
 cask "hazeover"
 cask "movist-pro"
+cask "oracle-jdk" # minecraft forge dependancy
 cask "steam"
 cask "typora"
 # cask "rectangle"
 # cask "rocket"
-cask "virtualbox"
+# cask "virtualbox"
 # cask "vlc"
 cask "quitter"
 
@@ -36,7 +37,7 @@ mas "isHUD", id: 484757536
 mas "KakaoTalk", id: 869223134
 mas "Microsoft To Do", id: 1274495053
 mas "Monit", id: 1014850245
-mas "Paste - Clipboard Manager", id: 967805235
+# mas "Paste - Clipboard Manager", id: 967805235
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
 mas "Speedtest", id: 1153157709
@@ -46,7 +47,8 @@ mas "The Unarchiver", id: 425424353
 # tap "homebrew/command-not-found"
 
 brew "cocoapods"
-brew "docker"
+# brew "docker"
+brew "fzf"
 brew "git"
 brew "git-lfs"
 brew "go"
@@ -54,6 +56,7 @@ brew "openssl"
 brew "peco"
 brew "pstree"
 brew "python"
+brew "python@3.8"
 brew "rust"
 brew "vim"
 brew "zsh"
@@ -86,3 +89,4 @@ cask "font-linux-libertine"
 
 tap "gerrit/homebrew-fonts-sanfrancisco"
 cask "font-sanfrancisco"
+
