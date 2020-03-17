@@ -47,6 +47,7 @@ mas "The Unarchiver", id: 425424353
 # tap "homebrew/command-not-found"
 
 brew "cocoapods"
+brew "direnv"
 # brew "docker"
 brew "fzf"
 brew "git"
