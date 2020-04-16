@@ -31,7 +31,7 @@ cask "typora"
 cask "quitter"
 
 mas "Amphetamine", id: 937984704
-mas "Between", id: 1320741520
+# mas "Between", id: 1320741520
 mas "Fantastical", id: 975937182
 mas "isHUD", id: 484757536
 mas "KakaoTalk", id: 869223134
