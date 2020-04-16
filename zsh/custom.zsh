@@ -7,7 +7,7 @@ source $SETUP/zsh/functions/edit-command-line.zsh
 
 # load peco commandline history
 # ref: https://www.44bits.io/ko/post/incremental-search-tool-peco
-# source $SETUP/zsh/functions/peco-history.zsh
+source $SETUP/zsh/functions/peco-history.zsh
 
 # Setting GOPATH
 export GOPATH=$HOME/Developer/Go
@@ -30,4 +30,4 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 # fzf commandline fuzzy completion
 # ref: https://subicura.com/2017/11/22/mac-os-development-environment-setup.html#커맨드라인-애플리케이션
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
