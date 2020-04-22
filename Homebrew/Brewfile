@@ -76,6 +76,7 @@ cask "insomnia"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "sequel-pro"
+# cask "wireshark"
 
 mas "2Icon", id: 1049625579
 mas "Octotree Pro", id: 1457450145
