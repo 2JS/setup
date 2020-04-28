@@ -16,5 +16,5 @@ alias dma='docker-machine'
 
 alias e='exa'
 alias ea='exa -a'
-alias el='exa -l'
-alias ela='exa -la'
+alias el='exa -lh'
+alias ela='exa -lha'
