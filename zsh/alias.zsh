@@ -13,3 +13,8 @@ alias dclf='docker-compose logs -f'
 
 # docker-machine shortcuts
 alias dma='docker-machine'
+
+alias e='exa'
+alias ea='exa -a'
+alias el='exa -l'
+alias ela='exa -la'
