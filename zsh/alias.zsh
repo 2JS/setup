@@ -1,5 +1,3 @@
-alias la='ls -a'
-
 # docker-compose shortcuts
 alias dco='docker-compose'
 alias dcb='docker-compose build'
@@ -14,7 +12,9 @@ alias dclf='docker-compose logs -f'
 # docker-machine shortcuts
 alias dma='docker-machine'
 
-alias e='exa'
-alias ea='exa -a'
-alias el='exa -lh'
-alias ela='exa -lha'
+# exa, powerful ls alternative
+alias ls='exa -h'
+alias la='exa -ah'
+alias ll='exa -lh'
+alias l='exa -lha'
+
