@@ -10,8 +10,8 @@ source $SETUP/zsh/functions/edit-command-line.zsh
 source $SETUP/zsh/functions/peco-history.zsh
 
 # Setting GOPATH
-export GOPATH=$HOME/Developer/Go
-export GOBIN=$GOPATH/bin
+# export GOPATH=$HOME/Developer/Go
+# export GOBIN=$GOPATH/bin
 
 export PATH=".:$PATH"
 # export EDITOR="vim"
@@ -31,3 +31,7 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 # fzf commandline fuzzy completion
 # ref: https://subicura.com/2017/11/22/mac-os-development-environment-setup.html#커맨드라인-애플리케이션
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#
+
+# direnv
+eval "$(direnv hook zsh)"
