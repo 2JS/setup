@@ -40,7 +40,7 @@ mas "Microsoft To Do", id: 1274495053
 mas "Monit", id: 1014850245
 # mas "Paste - Clipboard Manager", id: 967805235
 mas "Slack", id: 803453959
-mas "Spark", id: 1176895641
+# mas "Spark", id: 1176895641
 mas "Speedtest", id: 1153157709
 mas "The Unarchiver", id: 425424353
 
@@ -48,7 +48,7 @@ mas "The Unarchiver", id: 425424353
 # tap "homebrew/command-not-found"
 
 brew "bat"
-brew "cocoapods"
+# brew "cocoapods"
 brew "direnv"
 # brew "docker"
 brew "exa"
@@ -81,10 +81,10 @@ cask "iterm2"
 cask "java6"
 cask "jetbrains-toolbox"
 cask "logisim"
-cask "sequel-pro"
+# cask "sequel-pro"
 # cask "wireshark"
 
-mas "2Icon", id: 1049625579
+# mas "2Icon", id: 1049625579
 mas "Octotree Pro", id: 1457450145
 
 # Fonts
