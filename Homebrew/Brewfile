@@ -81,8 +81,8 @@ cask "insomnia"
 cask "iterm2"
 # cask "java6"
 cask "jetbrains-toolbox"
-# cask "sequel-pro"
 # cask "logisim"
+cask "sequel-pro"
 # cask "wireshark"
 
 # mas "2Icon", id: 1049625579
