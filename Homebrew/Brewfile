@@ -79,10 +79,10 @@ cask "google-chrome"
 cask "google-cloud-sdk"
 cask "insomnia"
 cask "iterm2"
-cask "java6"
+# cask "java6"
 cask "jetbrains-toolbox"
-cask "logisim"
 # cask "sequel-pro"
+# cask "logisim"
 # cask "wireshark"
 
 # mas "2Icon", id: 1049625579
