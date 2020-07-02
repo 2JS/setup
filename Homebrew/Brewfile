@@ -103,6 +103,3 @@ cask "font-sanfrancisco"
 tap "github/gh"
 brew "github/gh/gh"
 
-# temporary
-cask "flash-player"
-cask "zoomus"
