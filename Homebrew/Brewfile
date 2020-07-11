@@ -83,7 +83,7 @@ cask "iterm2"
 cask "jetbrains-toolbox"
 # cask "logisim"
 cask "sequel-pro"
-cask "vagrant"
+# cask "vagrant"
 # cask "wireshark"
 cask "zoomus"
 
