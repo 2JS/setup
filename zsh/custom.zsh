@@ -35,3 +35,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# git commit gpg signing
+export GPG_TTY=$(tty)
