@@ -38,4 +38,4 @@ eval "$(direnv hook zsh)"
 
 # git commit gpg signing
 export GPG_TTY=$(tty)
-export VISUAL=atom
+# export VISUAL=atom
