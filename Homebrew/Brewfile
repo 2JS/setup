@@ -85,6 +85,7 @@ cask "jetbrains-toolbox"
 # cask "logisim"
 cask "sequel-pro"
 # cask "vagrant"
+cask "visual-studio-code"
 # cask "wireshark"
 cask "zoomus"
 
