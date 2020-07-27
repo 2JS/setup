@@ -53,6 +53,7 @@ brew "direnv"
 # brew "docker"
 brew "exa"
 brew "fzf"
+brew "gh"
 brew "git"
 brew "git-lfs"
 brew "go"
@@ -103,7 +104,4 @@ cask "font-linux-libertine"
 
 tap "gerrit/homebrew-fonts-sanfrancisco"
 cask "font-sanfrancisco"
-
-tap "github/gh"
-brew "github/gh/gh"
 
