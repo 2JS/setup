@@ -79,6 +79,7 @@ plugins=(
 	git
 	docker
 	docker-compose
+	vscode
 )
 
 source $ZSH/oh-my-zsh.sh
