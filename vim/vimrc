@@ -40,7 +40,7 @@ syntax on
 " let g:airline_statusline_ontop=1 " status line on top
 " set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
 let g:airline#extensions#tabline#enabled=1
-autocmd vimenter * NERDTree " Start NerdTree on vim open
+" autocmd vimenter * NERDTree " Start NerdTree on vim open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Toggle File Tree
