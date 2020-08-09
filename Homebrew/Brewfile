@@ -21,6 +21,7 @@ cask "discord"
 cask "minecraft"
 # cask "mono-mdk" # ckan dependency
 cask "hazeover"
+cask "mendeley"
 cask "movist-pro"
 cask "oracle-jdk" # minecraft forge dependancy
 cask "steam"
