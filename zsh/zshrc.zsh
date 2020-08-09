@@ -120,4 +120,4 @@ source $HOME/.setup/zsh/alias.zsh
 source $HOME/.setup/zsh/zplug.zsh
 source $HOME/.setup/zsh/custom.zsh
 
-# test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/.iterm2_shell_integration.zsh"
+test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/.iterm2_shell_integration.zsh"
