@@ -4,8 +4,6 @@
 <dict>
 	<key>invertName</key>
 	<true/>
-	<key>openInAlfred</key>
-	<false/>
 	<key>showJobTitle</key>
 	<true/>
 	<key>showTitle</key>
