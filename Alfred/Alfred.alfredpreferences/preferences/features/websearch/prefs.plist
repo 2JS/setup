@@ -17,6 +17,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>2BD19D2E-9C79-4450-BF45-57E2F587F2A4</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>nw</string>
+			<key>text</key>
+			<string>Search 나무위키 for {query}</string>
+			<key>url</key>
+			<string>https://namu.wiki/Go?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>3236337B-3316-4338-96E2-6EC2C6594234</key>
 		<dict>
 			<key>enabled</key>
