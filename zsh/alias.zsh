@@ -18,3 +18,4 @@ alias la='exa -ah'
 alias ll='exa -lh'
 alias l='exa -lha'
 
+alias gpgtty='export GPG_TTY=$(tty)'
