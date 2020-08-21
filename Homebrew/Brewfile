@@ -71,7 +71,7 @@ brew "vim"
 brew "zsh"
 brew "zplug"
 
-cask "atom"
+# cask "atom"
 cask "couleurs"
 # cask "dash"
 cask "docker"
