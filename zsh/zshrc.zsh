@@ -79,6 +79,11 @@ plugins=(
 	git
 	docker
 	docker-compose
+	history
+	common-aliases
+	fasd
+	fzf
+	colorize
 	vscode
 )
 
