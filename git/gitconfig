@@ -13,4 +13,4 @@
 [tag]
 	forceSignAnnotated = true
 [core]
-	excludesFile = /Users/2JS/.setup/git/gitignore_global
+	excludesFile = /Users/2JS/.setup/git/gitignore
