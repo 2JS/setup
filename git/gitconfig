@@ -7,7 +7,7 @@
 	name = Lee, Jun Seok
 	email = lego3410@gmail.com
 [pull]
-	rebase = false
+	rebase = true
 [commit]
 	gpgsign = true
 [tag]
