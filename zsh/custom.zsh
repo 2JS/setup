@@ -19,8 +19,6 @@ export PATH=".:$PATH"
 # ref: https://github.com/Homebrew/homebrew-command-not-found
 # if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
-
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status direnv anaconda pyenv nodenv nvm nodeenv rbenv rvm kubecontext terraform aws nordvpn ranger)
 
