@@ -1,0 +1,16 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Lee, Jun Seok
+	email = lego3410@gmail.com
+[pull]
+	rebase = false
+[commit]
+	gpgsign = true
+[tag]
+	forceSignAnnotated = true
+[core]
+	excludesFile = /Users/2JS/.setup/git/gitignore_global
