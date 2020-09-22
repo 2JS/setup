@@ -2,5 +2,8 @@
 
 Homebrew/Brewfile.lock.json
 
+# Alfred local prefs, which does not synced
+Alfred/Alfred.alfredpreferences/preferences/local
+
 # vim autosave
 *.swp
