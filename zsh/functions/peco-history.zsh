@@ -1,3 +1,4 @@
+# https://www.44bits.io/ko/post/incremental-search-tool-peco
 # from http://qiita.com/uchiko/items/f6b1528d7362c9310da0 by uchiko
 
 function peco-select-history() {
