@@ -310,7 +310,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>screencapture -Uiupbd .</string>
+				<string>screencapture -upbd</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
