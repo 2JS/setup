@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>dev.2js.alfred.screenshot</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
