@@ -43,6 +43,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>80AFD44F-F549-48B4-9FE8-C66BBB58A218</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ad</string>
+			<key>text</key>
+			<string>Search Apple Developer for '{query}'</string>
+			<key>url</key>
+			<string>https://developer.apple.com/search/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>BB050D3C-30A2-41CD-BF23-4CD40DC7992B</key>
 		<dict>
 			<key>enabled</key>
