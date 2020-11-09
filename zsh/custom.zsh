@@ -39,3 +39,5 @@ eval "$(direnv hook zsh)"
 # git commit gpg signing
 # export GPG_TTY=$(tty)
 # export VISUAL=atom
+
+eval $(thefuck --alias)
