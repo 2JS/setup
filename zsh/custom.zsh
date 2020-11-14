@@ -41,3 +41,6 @@ eval "$(direnv hook zsh)"
 # export VISUAL=atom
 
 eval $(thefuck --alias)
+
+# jump
+eval "$(jump shell)"
