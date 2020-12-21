@@ -22,12 +22,13 @@
         "color" : "#FFFFFFAD"
       },
       "iconPaddingHorizontal" : 6,
+      "roundness" : 0,
       "paddingVertical" : 4,
       "iconSize" : 44
     },
     "search" : {
-      "paddingVertical" : 5,
-      "background" : "#FEFDFF00",
+      "backgroundSelected" : "#0058D0FF",
+      "paddingHorizontal" : 8,
       "spacing" : 5,
       "text" : {
         "size" : 40,
@@ -35,19 +36,22 @@
         "font" : "System Light",
         "color" : "#FFFFFFFF"
       },
-      "backgroundSelected" : "#0058D0FF"
+      "background" : "#FEFDFF00",
+      "roundness" : 0,
+      "paddingVertical" : 5
     },
     "window" : {
-      "color" : "#000000AD",
+      "color" : "#00000069",
       "paddingHorizontal" : 0,
       "width" : 573,
       "borderPadding" : 0,
       "borderColor" : "#000000FF",
-      "blur" : 20,
-      "roundness" : 3,
+      "blur" : 0,
+      "roundness" : 11,
       "paddingVertical" : 5
     },
     "credit" : "Dan Bergren",
+    "visualEffectMode" : 2,
     "separator" : {
       "color" : "#CD00FFFF",
       "thickness" : 0
