@@ -89,6 +89,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EAB88D48-7C0E-4577-A32E-91DB87D76D85</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>⌘⇧⌃6 Copy to Clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -346,6 +356,29 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>screencapture -upbdc</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EAB88D48-7C0E-4577-A32E-91DB87D76D85</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Simple Screenshot workflow.</string>
@@ -413,6 +446,13 @@
 			<integer>570</integer>
 			<key>ypos</key>
 			<integer>110</integer>
+		</dict>
+		<key>EAB88D48-7C0E-4577-A32E-91DB87D76D85</key>
+		<dict>
+			<key>xpos</key>
+			<integer>570</integer>
+			<key>ypos</key>
+			<integer>470</integer>
 		</dict>
 		<key>EFC33252-DA60-4FE6-8E37-295350B69B32</key>
 		<dict>
