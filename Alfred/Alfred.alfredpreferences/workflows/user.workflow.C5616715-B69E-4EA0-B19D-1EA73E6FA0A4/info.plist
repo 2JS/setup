@@ -26,7 +26,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Copy to Clipboard</string>
+				<string>⌘⇧⌃3 Copy to Clipboard</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -72,7 +72,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Copy to Clipboard</string>
+				<string>⌘⇧⌃4 Copy to Clipboard</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -132,7 +132,7 @@
 				<key>keyword</key>
 				<string>shot window</string>
 				<key>subtext</key>
-				<string></string>
+				<string>⌘⇧5</string>
 				<key>text</key>
 				<string>Capture Window</string>
 				<key>withspace</key>
@@ -199,7 +199,7 @@
 				<key>keyword</key>
 				<string>shot full</string>
 				<key>subtext</key>
-				<string></string>
+				<string>⌘⇧3</string>
 				<key>text</key>
 				<string>Capture Fullscreen</string>
 				<key>withspace</key>
@@ -243,7 +243,7 @@
 				<key>keyword</key>
 				<string>shot area</string>
 				<key>subtext</key>
-				<string></string>
+				<string>⌘⇧4</string>
 				<key>text</key>
 				<string>Capture Area</string>
 				<key>withspace</key>
@@ -333,7 +333,7 @@
 				<key>keyword</key>
 				<string>shot touch</string>
 				<key>subtext</key>
-				<string></string>
+				<string>⌘⇧6</string>
 				<key>text</key>
 				<string>Capture Touch Bar</string>
 				<key>withspace</key>
