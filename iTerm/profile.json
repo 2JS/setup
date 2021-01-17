@@ -311,7 +311,7 @@
   },
   "Ambiguous Double Width" : false,
   "Blur Radius" : 18.81341410215736,
-  "Cursor Type" : 1,
+  "Cursor Type" : 2,
   "Ansi 0 Color" : {
     "Green Component" : "0",
     "Red Component" : "0",
@@ -359,6 +359,7 @@
     "Blue Component" : "0.6588235"
   },
   "Columns" : 80,
+  "Unicode Normalization" : 1,
   "Visual Bell" : true,
   "ASCII Ligatures" : true,
   "Ansi 5 Color" : {
