@@ -16,3 +16,5 @@
 	excludesFile = ~/.setup/git/gitignore
 [rebase]
 	autostash = true
+[init]
+	defaultBranch = main
