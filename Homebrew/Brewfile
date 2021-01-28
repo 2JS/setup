@@ -31,17 +31,17 @@ cask "typora"
 # cask "vlc"
 cask "quitter"
 
-mas "Amphetamine", id: 937984704
+# mas "Amphetamine", id: 937984704
 # mas "Between", id: 1320741520
 mas "Fantastical", id: 975937182
 mas "isHUD", id: 484757536
 mas "KakaoTalk", id: 869223134
 mas "Microsoft To Do", id: 1274495053
-mas "Monit", id: 1014850245
+# mas "Monit", id: 1014850245
 # mas "Paste - Clipboard Manager", id: 967805235
 mas "Slack", id: 803453959
 # mas "Spark", id: 1176895641
-mas "Speedtest", id: 1153157709
+# mas "Speedtest", id: 1153157709
 mas "The Unarchiver", id: 425424353
 
 # Development
