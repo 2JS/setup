@@ -46,7 +46,7 @@
     "telnet"
   ],
   "Non-ASCII Ligatures" : true,
-  "Scrollback Lines" : 1000,
+  "Scrollback Lines" : 1000000,
   "Draw Powerline Glyphs" : true,
   "Flashing Bell" : false,
   "Cursor Guide Color" : {
