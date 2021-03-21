@@ -83,7 +83,7 @@
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>Google Translate</string>
 	<key>objects</key>
