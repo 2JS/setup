@@ -78,7 +78,6 @@ brew "zsh"
 brew "zplug"
 
 cask "aldente"
-cask "cocoapods"
 # cask "dash"
 cask "docker"
 # cask "github"
@@ -99,7 +98,7 @@ cask "sequel-pro"
 # cask "vagrant"
 cask "visual-studio-code"
 # cask "wireshark"
-cask "zoom"
+# cask "zoom"
 
 # mas "2Icon", id: 1049625579
 mas "Octotree Pro", id: 1457450145
