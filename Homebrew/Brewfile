@@ -108,10 +108,12 @@ mas "Octotree Pro", id: 1457450145
 tap "homebrew/cask-fonts"
 cask "font-monoid"
 cask "font-fira-code"
+cask "font-gugi"
+cask "font-linux-libertine"
 cask "font-nanum-gothic"
+cask "font-new-york"
 cask "font-noto-sans"
 cask "font-noto-sans-cjk"
-cask "font-linux-libertine"
 
 tap "gerrit/homebrew-fonts-sanfrancisco"
 cask "font-sanfrancisco"
