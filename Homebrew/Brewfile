@@ -50,6 +50,7 @@ mas "Things 3", id: 904280696
 # Development
 # tap "homebrew/command-not-found"
 
+brew "asciinema"
 brew "bat"
 brew "cocoapods"
 brew "direnv"
