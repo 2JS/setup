@@ -80,6 +80,7 @@ plugins=(
 	docker
 	docker-compose
 	history
+	gcloud
 	common-aliases
 	fasd
 	fzf
