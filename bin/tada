@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if ! command -v tmux &> /dev/null
+then
+	echo "tmux does not exist"
+	exit
+fi
+
+tmux new-session -d
+tmux split-window -h 'htop'
+
+
+if command -v nvidia-smi &> /dev/null
+then
+	tmux split -v 'watch -d -n 0.5 nvidia-smi'
+fi
+
+tmux attach

@@ -14,6 +14,7 @@ source $SETUP/zsh/functions/peco-history.zsh
 # export GOBIN=$GOPATH/bin
 
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$SETUP/bin"
 export PATH=".:$PATH"
 # export EDITOR="vim"
 
