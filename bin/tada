@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 if ! command -v tmux &> /dev/null
 then
