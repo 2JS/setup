@@ -14,9 +14,9 @@
 				<key>destinationuid</key>
 				<string>734890F5-3164-4F85-BB57-C95EA1EF62E6</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Save to Desktop</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -24,9 +24,9 @@
 				<key>destinationuid</key>
 				<string>4D0B626B-011F-4777-9553-F3830C55A883</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>⌘⇧⌃3 Copy to Clipboard</string>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -37,9 +37,9 @@
 				<key>destinationuid</key>
 				<string>9F4C49D1-7FAD-4F9A-A1A0-BB1CAB41C0C4</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Save to Desktop</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -47,9 +47,9 @@
 				<key>destinationuid</key>
 				<string>CA410948-AFBA-4D65-A04F-5F53C83F97E1</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>Copy to Clipboard</string>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -60,9 +60,9 @@
 				<key>destinationuid</key>
 				<string>ACC53985-ECE4-4A75-B5EC-03AF0FE9A396</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Save to Desktop</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -70,9 +70,9 @@
 				<key>destinationuid</key>
 				<string>F62A6567-A19A-43C0-83A7-55FBAA1183DC</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>⌘⇧⌃4 Copy to Clipboard</string>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -83,9 +83,9 @@
 				<key>destinationuid</key>
 				<string>6EE6BA5C-2A02-456E-A00B-AC35C0C3BA01</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Save to Desktop</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -93,9 +93,9 @@
 				<key>destinationuid</key>
 				<string>EAB88D48-7C0E-4577-A32E-91DB87D76D85</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>⌘⇧⌃6 Copy to Clipboard</string>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
