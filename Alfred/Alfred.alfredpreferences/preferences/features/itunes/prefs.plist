@@ -12,8 +12,6 @@
 		<string></string>
 	</dict>
 	<key>keyword</key>
-	<string>music</string>
-	<key>keywordEnabled</key>
-	<false/>
+	<string>ms</string>
 </dict>
 </plist>
