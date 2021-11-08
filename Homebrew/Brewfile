@@ -26,12 +26,13 @@ cask "movist-pro"
 cask "raindropio"
 # cask "steam"
 cask "thingsmacsandboxhelper"
+cask "timemachineeditor"
 cask "typora"
 # cask "rectangle"
 # cask "rocket"
 # cask "virtualbox"
 # cask "vlc"
-cask "quitter"
+# cask "quitter"
 
 # mas "Amphetamine", id: 937984704
 # mas "Between", id: 1320741520
@@ -81,7 +82,7 @@ brew "vim"
 brew "zsh"
 brew "zplug"
 
-cask "aldente"
+# cask "aldente"
 cask "brave-browser"
 # cask "dash"
 cask "docker"
@@ -104,8 +105,8 @@ cask "sf-symbols"
 # cask "sourcetree"
 # cask "vagrant"
 cask "visual-studio-code"
-# cask "wireshark"
-# cask "zoom"
+cask "wireshark"
+cask "zoom"
 
 # mas "2Icon", id: 1049625579
 mas "Octotree Pro", id: 1457450145
