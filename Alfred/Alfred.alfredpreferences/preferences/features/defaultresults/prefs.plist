@@ -11,8 +11,6 @@
 		<string>features.websearch.gtranslate.fallback</string>
 		<string>features.websearch.youtube.fallback</string>
 	</array>
-	<key>fallbacksMode</key>
-	<integer>1</integer>
 	<key>showArchives</key>
 	<true/>
 	<key>showContactsUsingMetadata</key>
