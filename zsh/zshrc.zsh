@@ -76,6 +76,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+	zsh-completions
+	zsh-autosuggestions
+	fast-syntax-highlighting
 	git
 	docker
 	docker-compose
@@ -87,6 +90,8 @@ plugins=(
 	colorize
 	vscode
 )
+
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,7 +128,6 @@ export EDITOR='vim'
 
 # load custom environment
 source $HOME/.setup/zsh/alias.zsh
-source $HOME/.setup/zsh/zplug.zsh
 source $HOME/.setup/zsh/custom.zsh
 
 test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/.iterm2_shell_integration.zsh"
