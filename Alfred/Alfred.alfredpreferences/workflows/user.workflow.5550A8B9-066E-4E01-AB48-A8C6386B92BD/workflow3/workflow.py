@@ -4,8 +4,9 @@
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
-# Created on 2014-02-15
+# modified on 2022-02-04 by Kyeongwon Lee <kwlee1718@gmail.com>
 #
+
 
 """The :class:`Workflow` object is the main interface to this library.
 
@@ -22,7 +23,7 @@ up your Python script to best utilise the :class:`Workflow` object.
 from __future__ import print_function, unicode_literals
 
 import binascii
-import cPickle
+import _pickle as cPickle
 from copy import deepcopy
 import json
 import logging
@@ -44,8 +45,8 @@ except ImportError:  # pragma: no cover
     import xml.etree.ElementTree as ET
 
 # imported to maintain API
-from util import AcquisitionError  # noqa: F401
-from util import (
+from .util import AcquisitionError  # noqa: F401
+from .util import (
     atomic_writer,
     LockFile,
     uninterruptible,
@@ -857,10 +858,10 @@ class Settings(dict):
         data = {}
         data.update(self)
 
+        # data = {k: str(v).encode("utf-8") for k,v in data.items()}
         with LockFile(self._filepath, 0.5):
-            with atomic_writer(self._filepath, 'wb') as fp:
-                json.dump(data, fp, sort_keys=True, indent=2,
-                          encoding='utf-8')
+            with atomic_writer(self._filepath, 'w') as fp:
+                json.dump(data, fp, sort_keys=True, indent=2)
 
     # dict methods
     def __setitem__(self, key, value):
@@ -1100,7 +1101,7 @@ class Workflow(object):
             if self.alfred_env.get('workflow_bundleid'):
                 self._bundleid = self.alfred_env.get('workflow_bundleid')
             else:
-                self._bundleid = unicode(self.info['bundleid'], 'utf-8')
+                self._bundleid = self.info['bundleid'].encode('utf-8')
 
         return self._bundleid
 
@@ -1171,7 +1172,7 @@ class Workflow(object):
                 version = self.info.get('version')
 
             if version:
-                from update import Version
+                from .update import Version
                 version = Version(version)
 
             self._version = version
@@ -1250,7 +1251,7 @@ class Workflow(object):
             os.path.expanduser(
                 '~/Library/Caches/com.runningwithcrayons.Alfred-2/'
                 'Workflow Data/'),
-            self.bundleid)
+            str(self.bundleid))
 
     @property
     def datadir(self):
@@ -1284,7 +1285,7 @@ class Workflow(object):
         """Alfred 2's default data directory."""
         return os.path.join(os.path.expanduser(
             '~/Library/Application Support/Alfred 2/Workflow Data/'),
-            self.bundleid)
+            str(self.bundleid))
 
     @property
     def workflowdir(self):
@@ -1299,7 +1300,7 @@ class Workflow(object):
             # the library is in. CWD will be the workflow root if
             # a workflow is being run in Alfred
             candidates = [
-                os.path.abspath(os.getcwdu()),
+                # os.path.abspath(()),
                 os.path.dirname(os.path.abspath(os.path.dirname(__file__)))]
 
             # climb the directory tree until we find `info.plist`
@@ -2083,7 +2084,7 @@ class Workflow(object):
 
             if not sys.stdout.isatty():  # Show error in Alfred
                 if text_errors:
-                    print(unicode(err).encode('utf-8'), end='')
+                    print(str(err).encode('utf-8'), end='')
                 else:
                     self._items = []
                     if self._name:
@@ -2093,7 +2094,7 @@ class Workflow(object):
                     else:  # pragma: no cover
                         name = os.path.dirname(__file__)
                     self.add_item("Error in workflow '%s'" % name,
-                                  unicode(err),
+                                  str(err),
                                   icon=ICON_ERROR)
                     self.send_feedback()
             return 1
@@ -2179,7 +2180,7 @@ class Workflow(object):
         for item in self._items:
             root.append(item.elem)
         sys.stdout.write('<?xml version="1.0" encoding="utf-8"?>\n')
-        sys.stdout.write(ET.tostring(root).encode('utf-8'))
+        sys.stdout.write(str(ET.tostring(root).decode('utf-8')))
         sys.stdout.flush()
 
     ####################################################################
@@ -2245,7 +2246,7 @@ class Workflow(object):
 
             version = self.version
 
-        if isinstance(version, basestring):
+        if isinstance(version, str):
             from update import Version
             version = Version(version)
 
@@ -2456,7 +2457,7 @@ class Workflow(object):
             h = groups.get('hex')
             password = groups.get('pw')
             if h:
-                password = unicode(binascii.unhexlify(h), 'utf-8')
+                password = str(binascii.unhexlify(h)).encode('utf-8')
 
         self.logger.debug('got password : %s:%s', service, account)
 
@@ -2697,8 +2698,8 @@ class Workflow(object):
         """
         encoding = encoding or self._input_encoding
         normalization = normalization or self._normalizsation
-        if not isinstance(text, unicode):
-            text = unicode(text, encoding)
+        if not isinstance(text, str):
+            text = str(text).encode(encoding)
         return unicodedata.normalize(normalization, text)
 
     def fold_to_ascii(self, text):
@@ -2717,8 +2718,8 @@ class Workflow(object):
         if isascii(text):
             return text
         text = ''.join([ASCII_REPLACEMENTS.get(c, c) for c in text])
-        return unicode(unicodedata.normalize('NFKD',
-                       text).encode('ascii', 'ignore'))
+        return str(unicodedata.normalize('NFKD',
+            text).encode('ascii', 'ignore'))
 
     def dumbify_punctuation(self, text):
         """Convert non-ASCII punctuation to closest ASCII equivalent.
@@ -2765,7 +2766,8 @@ class Workflow(object):
     def _load_info_plist(self):
         """Load workflow info from ``info.plist``."""
         # info.plist should be in the directory above this one
-        self._info = plistlib.readPlist(self.workflowfile('info.plist'))
+        with open(self.workflowfile("info.plist"), "rb") as f:
+            self._info = plistlib.load(f)
         self._info_loaded = True
 
     def _create(self, dirpath):

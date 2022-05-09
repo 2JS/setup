@@ -27,16 +27,16 @@ if sys.version[0] == "2":
 else:
     from workflow3 import web, Workflow
 
-def get_dictionary_data(word):
-    url = 'https://ac.dict.naver.com/enendict/ac'
-    params = dict(q_enc='utf-8',
-                  st=11001,
+
+def get_dictionary_data(lang, word):
+    url = 'https://ac-dict.naver.com/%sko/ac' % lang
+    params = dict(q=word,
+                  _callback='',
+                  q_enc='UTF-8',
+                  st=11,
+                  r_lt='10',
                   r_format='json',
-                  r_enc='utf-8',
-                  r_lt=10001,
-                  r_unicode=0,
-                  r_escape=1,
-                  q=word)
+                  r_enc='UTF-8')
 
     r = web.get(url, params)
     r.raise_for_status()
@@ -44,28 +44,35 @@ def get_dictionary_data(word):
 
 
 def main(wf):
-    args = wf.args[0]
+    if sys.version[0] == "2":
+        import cgi as html
+    else:
+        import html
 
-    wf.add_item(title='Search Naver Endic for \'%s\'' % args,
-                autocomplete=args,
-                arg=args,
+    lang = wf.args[0]
+    word = wf.args[1]
+
+    wf.add_item(title = 'Search Naver %sdic for \'%s\'' % (lang, word),
+                autocomplete=word,
+                arg=word,
                 valid=True)
 
     def wrapper():
-        return get_dictionary_data(args)
+        return get_dictionary_data(lang, word)
 
-    res_json = wf.cached_data("en_%s" % args, wrapper, max_age=600)
+    res_json = wf.cached_data("%s_%s" % (lang, word), wrapper, max_age=600)
 
-    for ltxt in res_json['items'][0]:
-        if len(ltxt) > 0:
-            txt = ltxt[0][0]
-            rtxt = ltxt[1][0]
+    for item in res_json['items']:
+        for ltxt in item:
+            if len(ltxt) > 0:
+                txt = ltxt[0][0]
+                rtxt = html.escape(ltxt[3][0])
 
-            wf.add_item(title=u"%s     %s" % (txt, rtxt),
-                        subtitle='Search Naver Endic for \'%s\'' % txt,
-                        autocomplete=txt,
-                        arg=txt,
-                        valid=True)
+                wf.add_item(title = u"%s     %s" % (txt, rtxt) ,
+                            subtitle = 'Search Naver %sdic for \'%s\'' % (lang, txt),
+                            autocomplete=txt,
+                            arg=txt,
+                            valid=True)
 
     wf.send_feedback()
 

@@ -5,7 +5,8 @@
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
-# Created on 2014-04-06
+# modified on 2022-02-04 by Kyeongwon Lee <kwlee1718@gmail.com>
+#
 #
 
 """This module provides an API to run commands in background processes.
@@ -25,7 +26,7 @@ import os
 import subprocess
 import pickle
 
-from workflow import Workflow
+from workflow3 import Workflow
 
 __all__ = ['is_running', 'run_in_background']
 

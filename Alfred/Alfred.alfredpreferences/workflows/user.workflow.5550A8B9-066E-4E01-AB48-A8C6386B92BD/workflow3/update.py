@@ -6,7 +6,8 @@
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
-# Created on 2014-08-16
+# modified on 2022-02-04 by Kyeongwon Lee <kwlee1718@gmail.com>
+#
 #
 
 """Self-updating from GitHub.
@@ -31,8 +32,8 @@ import tempfile
 import re
 import subprocess
 
-import workflow
-import web
+from . import workflow
+from . import web
 
 # __all__ = []
 
@@ -143,7 +144,7 @@ class Download(object):
                 pre-release. Defaults to False.
 
         """
-        if isinstance(version, basestring):
+        if isinstance(version, str):
             version = Version(version)
 
         self.url = url

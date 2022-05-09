@@ -22,20 +22,14 @@
 
 import sys
 
-if sys.version[0] == "2":
-    from workflow import web, Workflow
-else:
-    from workflow3 import web, Workflow
+from workflow import web, Workflow
+
 
 def get_dictionary_data(word):
-    url = 'https://ac.dict.naver.com/enendict/ac'
-    params = dict(q_enc='utf-8',
-                  st=11001,
+    url = 'https://ac.dict.naver.com/enen1/ac'
+    params = dict(st=11,
                   r_format='json',
-                  r_enc='utf-8',
-                  r_lt=10001,
-                  r_unicode=0,
-                  r_escape=1,
+                  r_lt=11,
                   q=word)
 
     r = web.get(url, params)
@@ -54,7 +48,7 @@ def main(wf):
     def wrapper():
         return get_dictionary_data(args)
 
-    res_json = wf.cached_data("en_%s" % args, wrapper, max_age=600)
+    res_json = wf.cached_data("en1_%s" % args, wrapper, max_age=600)
 
     for ltxt in res_json['items'][0]:
         if len(ltxt) > 0:
