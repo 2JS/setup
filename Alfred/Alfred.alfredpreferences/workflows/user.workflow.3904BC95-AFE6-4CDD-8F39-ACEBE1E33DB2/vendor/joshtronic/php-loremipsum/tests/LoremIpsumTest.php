@@ -1,127 +1,198 @@
 <?php
+namespace joshtronic\Tests;
+use joshtronic\LoremIpsum;
+use PHPUnit\Framework\TestCase;
 
-require_once '../src/LoremIpsum.php';
-
-class LoremIpsumTest extends PHPUnit_Framework_TestCase
+class LoremIpsumTest extends TestCase
 {
-    private $lipsum;
+    /**
+     * @doesNotPerformAssertions
+     */
+    public function testAssertRegExp() {
+        if (version_compare(PHP_VERSION, '7.3.0', '>=')) {
+            return 'assertMatchesRegularExpression';
+        }
 
-    public function setUp()
-    {
-        $this->lipsum = new joshtronic\LoremIpsum();
+        return 'assertRegExp';
     }
 
-    public function testWord()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testWord($assertRegExp)
     {
-        $this->assertRegExp('/^[a-z]+$/i', $this->lipsum->word());
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp('/^[a-z]+$/i', $lipsum->word());
     }
 
-    public function testWords()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testWords($assertRegExp)
     {
-        $this->assertRegExp(
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp(
             '/^[a-z]+ [a-z]+ [a-z]+$/i',
-            $this->lipsum->words(3)
+            $lipsum->words(3)
         );
     }
 
-    public function testWordsArray()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testWordsArray($assertRegExp)
     {
-        $words = $this->lipsum->wordsArray(3);
+        $lipsum = new LoremIpsum();
+        $words = $lipsum->wordsArray(3);
         $this->assertTrue(is_array($words));
         $this->assertCount(3, $words);
 
-        foreach ($words as $word)
-        {
-            $this->assertRegExp('/^[a-z]+$/i', $word);
+        foreach ($words as $word) {
+            $this->$assertRegExp('/^[a-z]+$/i', $word);
         }
     }
 
-    public function testWordsExceedingVocab()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testWordsExceedingVocab($assertRegExp)
     {
-        $this->assertCount(500, $this->lipsum->wordsArray(500));
+        $lipsum = new LoremIpsum();
+        $this->assertCount(500, $lipsum->wordsArray(500));
     }
 
-    public function testSentence()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testSentence($assertRegExp)
     {
-        $this->assertRegExp('/^[a-z, ]+\.$/i', $this->lipsum->sentence());
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp('/^[a-z, ]+\.$/i', $lipsum->sentence());
     }
 
-    public function testSentences()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testSentences($assertRegExp)
     {
-        $this->assertRegExp('/^[a-z, ]+\. [a-z, ]+\. [a-z, ]+\.$/i', $this->lipsum->sentences(3));
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp(
+            '/^[a-z, ]+\. [a-z, ]+\. [a-z, ]+\.$/i',
+            $lipsum->sentences(3)
+        );
     }
 
-    public function testSentencesArray()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testSentencesArray($assertRegExp)
     {
-        $sentences = $this->lipsum->sentencesArray(3);
+        $lipsum = new LoremIpsum();
+        $sentences = $lipsum->sentencesArray(3);
         $this->assertTrue(is_array($sentences));
         $this->assertCount(3, $sentences);
 
-        foreach ($sentences as $sentence)
-        {
-            $this->assertRegExp('/^[a-z, ]+\.$/i', $sentence);
+        foreach ($sentences as $sentence) {
+            $this->$assertRegExp('/^[a-z, ]+\.$/i', $sentence);
         }
     }
 
-    public function testParagraph()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testParagraph($assertRegExp)
     {
-        $this->assertRegExp('/^([a-z, ]+\.)+$/i', $this->lipsum->paragraph());
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp('/^([a-z, ]+\.)+$/i', $lipsum->paragraph());
     }
 
-    public function testParagraphs()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testParagraphs($assertRegExp)
     {
-        $this->assertRegExp(
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp(
             '/^([a-z, ]+\.)+\n\n([a-z, ]+\.)+\n\n([a-z, ]+\.)+$/i',
-            $this->lipsum->paragraphs(3)
+            $lipsum->paragraphs(3)
         );
     }
 
-    public function testParagraphsArray()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testParagraphsArray($assertRegExp)
     {
-        $paragraphs = $this->lipsum->paragraphsArray(3);
+        $lipsum = new LoremIpsum();
+        $paragraphs = $lipsum->paragraphsArray(3);
         $this->assertTrue(is_array($paragraphs));
         $this->assertCount(3, $paragraphs);
 
-        foreach ($paragraphs as $paragraph)
-        {
-            $this->assertRegExp('/^([a-z, ]+\.)+$/i', $paragraph);
+        foreach ($paragraphs as $paragraph) {
+            $this->$assertRegExp('/^([a-z, ]+\.)+$/i', $paragraph);
         }
     }
 
-    public function testMarkupString()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testMarkupString($assertRegExp)
     {
-        $this->assertRegExp(
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp(
             '/^<li>[a-z]+<\/li>$/i',
-            $this->lipsum->word('li')
+            $lipsum->word('li')
         );
     }
 
-    public function testMarkupArray()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testMarkupArray($assertRegExp)
     {
-        $this->assertRegExp(
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp(
             '/^<div><p>[a-z]+<\/p><\/div>$/i',
-            $this->lipsum->word(array('div', 'p'))
+            $lipsum->word(array('div', 'p'))
         );
     }
 
-    public function testMarkupBackReference()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testMarkupBackReference($assertRegExp)
     {
-        $this->assertRegExp(
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp(
             '/^<li><a href="[a-z]+">[a-z]+<\/a><\/li>$/i',
-            $this->lipsum->word('<li><a href="$1">$1</a></li>')
+            $lipsum->word('<li><a href="$1">$1</a></li>')
         );
     }
 
-    public function testMarkupArrayReturn()
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testMarkupArrayReturn($assertRegExp)
     {
-        $words = $this->lipsum->wordsArray(3, 'li');
+        $lipsum = new LoremIpsum();
+        $words = $lipsum->wordsArray(3, 'li');
         $this->assertTrue(is_array($words));
         $this->assertCount(3, $words);
 
-        foreach ($words as $word)
-        {
-            $this->assertRegExp('/^<li>[a-z]+<\/li>$/i', $word);
+        foreach ($words as $word) {
+            $this->$assertRegExp('/^<li>[a-z]+<\/li>$/i', $word);
         }
+    }
+
+    /**
+     * @depends testAssertRegExp
+     */
+    public function testSkipNonStringTag($assertRegExp)
+    {
+        $lipsum = new LoremIpsum();
+        $this->$assertRegExp('/^[a-z]+$/i', $lipsum->word(123));
+        $this->$assertRegExp('/^[a-z]+$/i', $lipsum->word(array(1, 2, 3)));
+        $this->$assertRegExp('/^[a-z]+$/i', $lipsum->word(true));
     }
 }
 

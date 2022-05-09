@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => '0.2.1',
+        'version' => '0.2.1.0',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => NULL,
+        'name' => 'tillkruss/alfred-lorem-ipsum',
+        'dev' => true,
+    ),
+    'versions' => array(
+        'joetannenbaum/alfred-workflow' => array(
+            'pretty_version' => '0.1.2',
+            'version' => '0.1.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../joetannenbaum/alfred-workflow',
+            'aliases' => array(),
+            'reference' => '88e042db9cad0c95ab80e87c69d7f1e15340e7ac',
+            'dev_requirement' => false,
+        ),
+        'joshtronic/php-loremipsum' => array(
+            'pretty_version' => '2.1.0',
+            'version' => '2.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../joshtronic/php-loremipsum',
+            'aliases' => array(),
+            'reference' => '6d7f8cff6a092a53d66b5237edbe97d398b14f88',
+            'dev_requirement' => false,
+        ),
+        'tillkruss/alfred-lorem-ipsum' => array(
+            'pretty_version' => '0.2.1',
+            'version' => '0.2.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => NULL,
+            'dev_requirement' => false,
+        ),
+    ),
+);

@@ -8,8 +8,8 @@
  * Licensed under The MIT License.
  * Redistribution of these files must retain the above copyright notice.
  *
- * @author    Josh Sherman <josh@gravityblvd.com>
- * @copyright Copyright 2014, 2015, 2016 Josh Sherman
+ * @author    Josh Sherman <hello@joshtronic.com>
+ * @copyright Copyright 2014-2022 Josh Sherman
  * @license   http://www.opensource.org/licenses/mit-license.html
  * @link      https://github.com/joshtronic/php-loremipsum
  */
@@ -24,7 +24,7 @@ class LoremIpsum
      * Whether or not we should be starting the string with "Lorem ipsum..."
      *
      * @access private
-     * @var    boolean
+     * @var    mixed
      */
     private $first = true;
 
@@ -35,57 +35,41 @@ class LoremIpsum
      * a complete list exists and if so, where to get it.
      *
      * @access private
-     * @var    array
+     * @var    array<string>
      */
-    public $words = array(
+    private $words = array(
         // Lorem ipsum...
-        'lorem',        'ipsum',       'dolor',        'sit',
-        'amet',         'consectetur', 'adipiscing',   'elit',
-        // The rest of the vocabulary
-        'a',            'ac',          'accumsan',     'ad',
-        'aenean',       'aliquam',     'aliquet',      'ante',
-        'aptent',       'arcu',        'at',           'auctor',
-        'augue',        'bibendum',    'blandit',      'class',
-        'commodo',      'condimentum', 'congue',       'consequat',
-        'conubia',      'convallis',   'cras',         'cubilia',
-        'cum',          'curabitur',   'curae',        'cursus',
-        'dapibus',      'diam',        'dictum',       'dictumst',
-        'dignissim',    'dis',         'donec',        'dui',
-        'duis',         'egestas',     'eget',         'eleifend',
-        'elementum',    'enim',        'erat',         'eros',
-        'est',          'et',          'etiam',        'eu',
-        'euismod',      'facilisi',    'facilisis',    'fames',
-        'faucibus',     'felis',       'fermentum',    'feugiat',
-        'fringilla',    'fusce',       'gravida',      'habitant',
-        'habitasse',    'hac',         'hendrerit',    'himenaeos',
-        'iaculis',      'id',          'imperdiet',    'in',
-        'inceptos',     'integer',     'interdum',     'justo',
-        'lacinia',      'lacus',       'laoreet',      'lectus',
-        'leo',          'libero',      'ligula',       'litora',
-        'lobortis',     'luctus',      'maecenas',     'magna',
-        'magnis',       'malesuada',   'massa',        'mattis',
-        'mauris',       'metus',       'mi',           'molestie',
-        'mollis',       'montes',      'morbi',        'mus',
-        'nam',          'nascetur',    'natoque',      'nec',
-        'neque',        'netus',       'nibh',         'nisi',
-        'nisl',         'non',         'nostra',       'nulla',
-        'nullam',       'nunc',        'odio',         'orci',
-        'ornare',       'parturient',  'pellentesque', 'penatibus',
-        'per',          'pharetra',    'phasellus',    'placerat',
-        'platea',       'porta',       'porttitor',    'posuere',
-        'potenti',      'praesent',    'pretium',      'primis',
-        'proin',        'pulvinar',    'purus',        'quam',
-        'quis',         'quisque',     'rhoncus',      'ridiculus',
-        'risus',        'rutrum',      'sagittis',     'sapien',
-        'scelerisque',  'sed',         'sem',          'semper',
-        'senectus',     'sociis',      'sociosqu',     'sodales',
-        'sollicitudin', 'suscipit',    'suspendisse',  'taciti',
-        'tellus',       'tempor',      'tempus',       'tincidunt',
-        'torquent',     'tortor',      'tristique',    'turpis',
-        'ullamcorper',  'ultrices',    'ultricies',    'urna',
-        'ut',           'varius',      'vehicula',     'vel',
-        'velit',        'venenatis',   'vestibulum',   'vitae',
-        'vivamus',      'viverra',     'volutpat',     'vulputate',
+        'lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit',
+
+        // and the rest of the vocabulary
+        'a', 'ac', 'accumsan', 'ad', 'aenean', 'aliquam', 'aliquet', 'ante',
+        'aptent', 'arcu', 'at', 'auctor', 'augue', 'bibendum', 'blandit',
+        'class', 'commodo', 'condimentum', 'congue', 'consequat', 'conubia',
+        'convallis', 'cras', 'cubilia', 'curabitur', 'curae', 'cursus',
+        'dapibus', 'diam', 'dictum', 'dictumst', 'dignissim', 'dis', 'donec',
+        'dui', 'duis', 'efficitur', 'egestas', 'eget', 'eleifend', 'elementum',
+        'enim', 'erat', 'eros', 'est', 'et', 'etiam', 'eu', 'euismod', 'ex',
+        'facilisi', 'facilisis', 'fames', 'faucibus', 'felis', 'fermentum',
+        'feugiat', 'finibus', 'fringilla', 'fusce', 'gravida', 'habitant',
+        'habitasse', 'hac', 'hendrerit', 'himenaeos', 'iaculis', 'id',
+        'imperdiet', 'in', 'inceptos', 'integer', 'interdum', 'justo',
+        'lacinia', 'lacus', 'laoreet', 'lectus', 'leo', 'libero', 'ligula',
+        'litora', 'lobortis', 'luctus', 'maecenas', 'magna', 'magnis',
+        'malesuada', 'massa', 'mattis', 'mauris', 'maximus', 'metus', 'mi',
+        'molestie', 'mollis', 'montes', 'morbi', 'mus', 'nam', 'nascetur',
+        'natoque', 'nec', 'neque', 'netus', 'nibh', 'nisi', 'nisl', 'non',
+        'nostra', 'nulla', 'nullam', 'nunc', 'odio', 'orci', 'ornare',
+        'parturient', 'pellentesque', 'penatibus', 'per', 'pharetra',
+        'phasellus', 'placerat', 'platea', 'porta', 'porttitor', 'posuere',
+        'potenti', 'praesent', 'pretium', 'primis', 'proin', 'pulvinar',
+        'purus', 'quam', 'quis', 'quisque', 'rhoncus', 'ridiculus', 'risus',
+        'rutrum', 'sagittis', 'sapien', 'scelerisque', 'sed', 'sem', 'semper',
+        'senectus', 'sociosqu', 'sodales', 'sollicitudin', 'suscipit',
+        'suspendisse', 'taciti', 'tellus', 'tempor', 'tempus', 'tincidunt',
+        'torquent', 'tortor', 'tristique', 'turpis', 'ullamcorper', 'ultrices',
+        'ultricies', 'urna', 'ut', 'varius', 'vehicula', 'vel', 'velit',
+        'venenatis', 'vestibulum', 'vitae', 'vivamus', 'viverra', 'volutpat',
+        'vulputate',
     );
 
     /**
@@ -99,7 +83,7 @@ class LoremIpsum
      */
     public function word($tags = false)
     {
-        return $this->words(1, $tags);
+        return strval($this->words(1, $tags));
     }
 
     /**
@@ -110,7 +94,7 @@ class LoremIpsum
      * @access public
      * @param  integer $count how many words to generate
      * @param  mixed   $tags string or array of HTML tags to wrap output with
-     * @return array   generated lorem ipsum words
+     * @return mixed  generated lorem ipsum words
      */
     public function wordsArray($count = 1, $tags = false)
     {
@@ -130,6 +114,7 @@ class LoremIpsum
      */
     public function words($count = 1, $tags = false, $array = false)
     {
+        $count      = (int) $count;
         $words      = array();
         $word_count = 0;
 
@@ -167,7 +152,7 @@ class LoremIpsum
      */
     public function sentence($tags = false)
     {
-        return $this->sentences(1, $tags);
+        return strval($this->sentences(1, $tags));
     }
 
     /**
@@ -178,7 +163,7 @@ class LoremIpsum
      * @access public
      * @param  integer $count how many sentences to generate
      * @param  mixed   $tags string or array of HTML tags to wrap output with
-     * @return array   generated lorem ipsum sentences
+     * @return mixed   generated lorem ipsum sentences
      */
     public function sentencesArray($count = 1, $tags = false)
     {
@@ -220,7 +205,7 @@ class LoremIpsum
      */
     public function paragraph($tags = false)
     {
-        return $this->paragraphs(1, $tags);
+        return strval($this->paragraphs(1, $tags));
     }
 
     /**
@@ -231,15 +216,18 @@ class LoremIpsum
      * @access public
      * @param  integer $count how many paragraphs to generate
      * @param  mixed   $tags string or array of HTML tags to wrap output with
-     * @return array   generated lorem ipsum paragraphs
+     * @return array<string>   generated lorem ipsum paragraphs
      */
     public function paragraphsArray($count = 1, $tags = false)
     {
+        // The $array parameter set to true means an array is returned.
+        // Return type is mixed, we should probably cast to array.
+        // @phpstan-ignore-next-line
         return $this->paragraphs($count, $tags, true);
     }
 
     /**
-     * Paragraphss
+     * Paragraphs
      *
      * Generates paragraphs of lorem ipsum.
      *
@@ -254,10 +242,13 @@ class LoremIpsum
         $paragraphs = array();
 
         for ($i = 0; $i < $count; $i++) {
-            $paragraphs[] = $this->sentences($this->gauss(5.8, 1.93));
+            $paragraphs[] = strval($this->sentences($this->gauss(5.8, 1.93)));
         }
 
-        return $this->output($paragraphs, $tags, $array, "\n\n");
+        if ($array) {
+            return $this->output($paragraphs, $tags, $array, "\n\n");
+        }
+        return strval($this->output($paragraphs, $tags, false, "\n\n"));
     }
 
     /**
@@ -271,7 +262,7 @@ class LoremIpsum
      * @access private
      * @param  double  $mean average value
      * @param  double  $std_dev stadnard deviation
-     * @return double  calculated distribution
+     * @return int  calculated distribution
      */
     private function gauss($mean, $std_dev)
     {
@@ -279,7 +270,7 @@ class LoremIpsum
         $y = mt_rand() / mt_getrandmax();
         $z = sqrt(-2 * log($x)) * cos(2 * pi() * $y);
 
-        return $z * $std_dev + $mean;
+        return intval($z * $std_dev + $mean);
     }
 
     /**
@@ -289,6 +280,7 @@ class LoremIpsum
      * the first time we are generating the text.
      *
      * @access private
+     * @return void
      */
     private function shuffle()
     {
@@ -314,18 +306,18 @@ class LoremIpsum
      * first word of the sentence.
      *
      * @access private
-     * @param  array   $sentences the sentences we would like to punctuate
+     * @param  array<string>   $sentences the sentences we would like to punctuate
+     * @return void
      */
     private function punctuate(&$sentences)
     {
         foreach ($sentences as $key => $sentence) {
             $words = count($sentence);
-
             // Only worry about commas on sentences longer than 4 words
             if ($words > 4) {
                 $mean    = log($words, 6);
                 $std_dev = $mean / 6;
-                $commas  = round($this->gauss($mean, $std_dev));
+                $commas  = $this->gauss($mean, $std_dev);
 
                 for ($i = 1; $i <= $commas; $i++) {
                     $word = round($i * $words / ($commas + 1));
@@ -349,7 +341,7 @@ class LoremIpsum
      * into a string or not.
      *
      * @access private
-     * @param  array   $strings an array of generated strings
+     * @param  array<string>   $strings an array of generated strings
      * @param  mixed   $tags string or array of HTML tags to wrap output with
      * @param  boolean $array whether an array or a string should be returned
      * @param  string  $delimiter the string to use when calling implode()
@@ -367,11 +359,13 @@ class LoremIpsum
 
             foreach ($strings as $key => $string) {
                 foreach ($tags as $tag) {
-                    // Detects / applies back reference
-                    if ($tag[0] == '<') {
-                        $string = str_replace('$1', $string, $tag);
-                    } else {
-                        $string = sprintf('<%1$s>%2$s</%1$s>', $tag, $string);
+                    if (is_string($tag)) {
+                        // Detects / applies back reference
+                        if ($tag[0] == '<') {
+                            $string = str_replace('$1', $string, $tag);
+                        } else {
+                            $string = sprintf('<%1$s>%2$s</%1$s>', $tag, $string);
+                        }
                     }
 
                     $strings[$key] = $string;
@@ -386,4 +380,3 @@ class LoremIpsum
         return $strings;
     }
 }
-

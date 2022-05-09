@@ -20,6 +20,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>FBDD4131-4351-4385-BABE-8DD45127635F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>620E35F8-FBBB-4FB3-9C4A-0903F85E9988</key>
 		<array/>
@@ -87,7 +97,7 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>lorem words</string>
 				<key>queuedelaycustom</key>
@@ -101,7 +111,17 @@
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>php loremipsum.php "words" "{query}"</string>
+				<string>if [ -x "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php loremipsum.php "words" "{query}"
+elif [ -x "/usr/local/bin/php" ]; then
+    /usr/local/bin/php loremipsum.php "words" "{query}"
+elif [ -x "/usr/bin/php" ]; then
+    /usr/bin/php loremipsum.php "words" "{query}"
+elif [ -x "$(which php)" ]; then
+    $(which php) loremipsum.php "words" "{query}"
+else
+    php loremipsum.php "words" "{query}"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -169,7 +189,17 @@
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>php loremipsum.php "sentences" "{query}"</string>
+				<string>if [ -x "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php loremipsum.php "sentences" "{query}"
+elif [ -x "/usr/local/bin/php" ]; then
+    /usr/local/bin/php loremipsum.php "sentences" "{query}"
+elif [ -x "/usr/bin/php" ]; then
+    /usr/bin/php loremipsum.php "sentences" "{query}"
+elif [ -x "$(which php)" ]; then
+    $(which php) loremipsum.php "sentences" "{query}"
+else
+    php loremipsum.php "sentences" "{query}"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -191,6 +221,8 @@
 			<integer>3</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict/>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
@@ -247,7 +279,17 @@
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>php loremipsum.php "paragraphs" "{query}"</string>
+				<string>if [ -x "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php loremipsum.php "paragraphs" "{query}"
+elif [ -x "/usr/local/bin/php" ]; then
+    /usr/local/bin/php loremipsum.php "paragraphs" "{query}"
+elif [ -x "/usr/bin/php" ]; then
+    /usr/bin/php loremipsum.php "paragraphs" "{query}"
+elif [ -x "$(which php)" ]; then
+    $(which php) loremipsum.php "paragraphs" "{query}"
+else
+    php loremipsum.php "paragraphs" "{query}"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -270,7 +312,15 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>```
+lorem words &lt;number&gt;
+lorem sentences &lt;number&gt;
+lorem paragraphs &lt;number&gt;
+```
+
+Just type `lorem` followed by either `words`, `sentences` or `paragraphs` and optionally a number.
+
+Instead of typing you may of course use Alfred's hotkeys to navigate faster.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0FA1C23A-16EB-4A9D-B80B-E0A5B0962694</key>
@@ -316,8 +366,10 @@
 			<integer>290</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>0.2.0</string>
+	<string>0.2.2</string>
 	<key>webaddress</key>
 	<string>https://till.im</string>
 </dict>
