@@ -48,7 +48,7 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>ad</string>
+			<string>a</string>
 			<key>text</key>
 			<string>Search Apple Developer for '{query}'</string>
 			<key>url</key>
