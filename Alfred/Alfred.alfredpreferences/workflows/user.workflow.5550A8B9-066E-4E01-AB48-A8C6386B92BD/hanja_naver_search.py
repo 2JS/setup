@@ -22,6 +22,7 @@
 
 import sys
 
+
 if sys.version[0] == "2":
     from workflow import web, Workflow
 else:
@@ -51,6 +52,7 @@ def main(wf):
     wf.add_item(title='Search Naver Hanja for \'%s\'' % args,
                 autocomplete=args,
                 arg=args,
+                quicklookurl='https://hanja.dict.naver.com/#/search?range=all&query=%s' % args,
                 valid=True)
 
     def wrapper():
@@ -69,6 +71,9 @@ def main(wf):
                             subtitle='Search Naver Hanja for \'%s\'' % txt,
                             autocomplete=txt,
                             arg=txt,
+                            copytext=r2txt,
+                            largetext=txt,
+                            quicklookurl='https://hanja.dict.naver.com/#/search?range=all&query=%s' % txt,
                             valid=True)
 
     wf.send_feedback()

@@ -31,19 +31,18 @@ else:
 
 
 def get_data(word):
-    url = 'http://ac.search.naver.com/nx/ac'
+    url = 'https://ac.terms.naver.com/ac'
 
-    params = dict(q_enc='UTF-8',
-                  st=100,
-                  r_format='json',
-                  r_enc='UTF-8',
-                  r_unicode=0,
-                  t_koreng=1,
-                  ans=1,
-                  run=2,
-                  rev=4,
-                  q=word
-                  )
+    params = dict(
+        frm='terms',
+        q_enc='UTF-8',
+        st=111111,
+        r_lt=111111,
+        r_format='json',
+        r_enc='UTF-8',
+        r_unicode=0,
+        q=word
+    )
 
     r = web.get(url, params)
     r.raise_for_status()
@@ -53,27 +52,27 @@ def get_data(word):
 def main(wf):
     args = wf.args[0]
 
-    wf.add_item(title='Search Naver for \'%s\'' % args,
+    wf.add_item(title='Search Naver Terms for \'%s\'' % args,
                 autocomplete=args,
                 arg=args,
-                quicklookurl='https://search.naver.com/search.naver?ie=utf8&sm=stp_hty&where=se&query=%s' % args,
+                quicklookurl='https://terms.naver.com/search.naver?query=%s' % args,
                 valid=True)
 
     def wrapper():
         return get_data(args)
 
-    res_json = wf.cached_data('nav_%s' % args, wrapper, max_age=30)
+    res_json = wf.cached_data('navterm_%s' % args, wrapper, max_age=30)
 
     for ltxt in res_json['items'][0]:
         if len(ltxt) > 0:
             txt = ltxt[0]
             wf.add_item(
-                title='Search Naver for \'%s\'' % txt,
+                title=txt,
                 autocomplete=txt,
                 arg=txt,
                 copytext=txt,
                 largetext=txt,
-                quicklookurl='https://search.naver.com/search.naver?ie=utf8&sm=stp_hty&where=se&query=%s' % txt,
+                quicklookurl='https://terms.naver.com/search.naver?query=%s' % txt,
                 valid=True)
 
     wf.send_feedback()

@@ -22,6 +22,7 @@
 
 import sys
 
+
 if sys.version[0] == "2":
     from workflow import web, Workflow
 else:
@@ -42,6 +43,7 @@ def main(wf):
     wf.add_item(title='Search Naver Krdic for \'%s\'' % args,
                 autocomplete=args,
                 arg=args,
+                quicklookurl='https://ko.dict.naver.com/#/search?query=%s' % args,
                 valid=True)
 
     def wrapper():
@@ -57,6 +59,9 @@ def main(wf):
                             subtitle='Search Naver Krdic for \'%s\'' % txt,
                             autocomplete=txt,
                             arg=txt,
+                            copytext=txt,
+                            largetext=txt,
+                            quicklookurl='https://ko.dict.naver.com/#/search?query=%s' % txt,
                             valid=True)
 
     wf.send_feedback()

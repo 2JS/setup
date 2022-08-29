@@ -23,6 +23,7 @@ SOFTWARE.
 
 import sys
 
+
 if sys.version[0] == "2":
     from workflow import web, Workflow
 else:
@@ -55,6 +56,7 @@ def main(wf):
     wf.add_item(title='Search Naver Shopping for \'%s\'' % args,
                 autocomplete=args,
                 arg=args,
+                quicklookurl='https://search.shopping.naver.com/search/all?query=%s' % args,
                 valid=True)
 
     def wrapper():
@@ -69,6 +71,9 @@ def main(wf):
                 title=txt,
                 autocomplete=txt,
                 arg=txt,
+                copytext=txt,
+                largetext=txt,
+                quicklookurl='https://search.shopping.naver.com/search/all?query=%s' % txt,
                 valid=True)
 
     wf.send_feedback()
