@@ -76,6 +76,7 @@ brew "pstree"
 brew "python"
 brew "python@3.7"
 brew "python@3.8"
+brew "python@3.9"
 # brew "rust" # use rustup instead of homebrew formula
 brew "swiftlint"
 brew "thefuck"
