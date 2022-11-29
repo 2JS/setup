@@ -78,16 +78,16 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
 	zsh-completions
 	zsh-autosuggestions
-	fast-syntax-highlighting
-	git
+	colorize
+	common-aliases
 	docker
 	docker-compose
-	history
-	gcloud
-	common-aliases
 	fasd
+	fast-syntax-highlighting
 	fzf
-	colorize
+	gcloud
+	git
+	history
 	vscode
 )
 
@@ -131,3 +131,4 @@ source $HOME/.setup/zsh/alias.zsh
 source $HOME/.setup/zsh/custom.zsh
 
 test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/.iterm2_shell_integration.zsh"
+
