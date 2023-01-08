@@ -8,7 +8,7 @@ fi
 
 tmux new-session -d
 tmux split-window -h 'htop'
-tmux split-window -v 'watch -d -n 0.5 nvidia-smi'
+tmux split-window -v 'watch -pd -n 0.5 nvidia-smi'
 tmux select-pane -t 0
 
 tmux attach
