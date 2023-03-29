@@ -6,6 +6,12 @@ then
 	exit
 fi
 
+if [ -n "$TMUX" ]
+then
+	echo "already in tmux"
+	exit
+fi
+
 if ! tmux attach -t tada 2>/dev/null
 then
         tmux new-session -d -s tada
