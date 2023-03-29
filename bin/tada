@@ -6,10 +6,12 @@ then
 	exit
 fi
 
-tmux new-session -d 'htop || top'
-tmux split-window -h
-tmux select-pane -t 0
-tmux split-window -v 'watch -pd -n 0.5 nvidia-smi'
-tmux select-pane -t 2
+if ! tmux attach -t tada 2>/dev/null
+then
+        tmux new-session -d -s tada
+        tmux split-window -hb 'htop || top'
+        tmux split-window -v 'watch -pd -n 0.5 nvidia-smi'
+        tmux select-pane -t 2
 
-tmux attach
+        tmux attach
+fi
