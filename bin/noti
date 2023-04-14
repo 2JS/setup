@@ -1,0 +1,3 @@
+#!/bin/zsh
+osascript -e 'display notification "Job finished" sound name "Crystal"'
+
