@@ -16,7 +16,7 @@ if ! tmux attach -t tada 2>/dev/null
 then
         tmux new-session -d -s tada
         tmux split-window -hb 'htop || top'
-        tmux split-window -v 'watch -pd -n 0.5 nvidia-smi'
+        tmux split-window -v 'nvtop || watch -pd -n 0.5 nvidia-smi'
         tmux select-pane -t 2
 
         tmux attach
