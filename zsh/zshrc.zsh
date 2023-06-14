@@ -84,7 +84,6 @@ plugins=(
 	docker-compose
 	fasd
 	fast-syntax-highlighting
-	fzf
 	gcloud
 	git
 	history
