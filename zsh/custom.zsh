@@ -21,12 +21,6 @@ export PATH=".:$PATH"
 # ref: https://github.com/Homebrew/homebrew-command-not-found
 # if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv anaconda pyenv nodenv nvm nodeenv rbenv rvm kubecontext terraform aws nordvpn ranger command_execution_time time)
-
-POWERLEVEL9K_STATUS_OK=false
-POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=true
-
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 
