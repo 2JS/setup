@@ -35,7 +35,5 @@ eval "$(direnv hook zsh)"
 # git commit gpg signing
 export GPG_TTY=$TTY
 
-eval $(thefuck --alias)
-
 # jump
 eval "$(jump shell)"
