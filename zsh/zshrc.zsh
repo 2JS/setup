@@ -126,7 +126,7 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-export LC_ALL=C.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # load custom environment
 source $HOME/.setup/zsh/alias.zsh
