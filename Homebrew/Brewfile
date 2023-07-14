@@ -40,7 +40,7 @@ cask "typora"
 # mas "Amphetamine", id: 937984704
 # mas "Between", id: 1320741520
 mas "Fantastical", id: 975937182
-mas "isHUD", id: 484757536
+# mas "isHUD", id: 484757536
 mas "KakaoTalk", id: 869223134
 # mas "Microsoft To Do", id: 1274495053
 # mas "Monit", id: 1014850245
