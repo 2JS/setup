@@ -87,9 +87,7 @@ plugins=(
 	gcloud
 	git
 	history
-	pyenv
 	terraform
-	tmux
 	vscode
 )
 
