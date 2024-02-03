@@ -16,7 +16,6 @@ source $SETUP/zsh/functions/peco-history.zsh
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$SETUP/bin"
-export PATH=".:$PATH"
 # export EDITOR="vim"
 
 # ref: https://github.com/Homebrew/homebrew-command-not-found
