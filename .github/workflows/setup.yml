@@ -1,0 +1,14 @@
+name: setup
+
+on:
+  pull_request:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  zsh:
+    runs-on: macos-14
+    steps:
+    - run: /bin/sh "$(curl -fsSL https://raw.githubusercontent.com/2JS/setup/main/setup.sh)"
