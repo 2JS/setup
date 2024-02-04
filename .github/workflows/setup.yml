@@ -9,6 +9,12 @@ on:
 
 jobs:
   zsh:
-    runs-on: macos-14
+    strategy:
+      matrix:
+        os:
+        - macos-14
+        - ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
-    - run: /bin/sh "$(curl -fsSL https://raw.githubusercontent.com/2JS/setup/main/setup.sh)"
+    - uses: actions/checkout@v4
+    - run: ./zsh/setup.sh
