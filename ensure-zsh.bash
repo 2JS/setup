@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 export SETUP_ROOT=${SETUP_ROOT:-$HOME/.setup}
 if command -v zsh >/dev/null 2>&1; then
