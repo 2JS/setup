@@ -18,3 +18,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: ./zsh/setup.sh
+      env:
+        SETUP_ROOT: ${{ github.workspace }}
