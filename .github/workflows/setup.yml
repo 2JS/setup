@@ -17,9 +17,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
-    - run: ./ensure-zsh.sh
+    - run: bash ./ensure-zsh.sh
       env:
         SETUP_ROOT: ${{ github.workspace }}
-    - run: ./setup.sh
+    - run: zsh ./setup.sh
       env:
         SETUP_ROOT: ${{ github.workspace }}
