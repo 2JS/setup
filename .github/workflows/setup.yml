@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  zsh:
+  setup:
     strategy:
       matrix:
         os:
@@ -17,6 +17,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
-    - run: ./zsh/setup.sh
+    - run: ./setup.sh
       env:
         SETUP_ROOT: ${{ github.workspace }}
