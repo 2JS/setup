@@ -1,5 +1,10 @@
 #!/bin/sh
-git clone --depth=1 https://github.com/2JS/setup.git ~/.setup
+if [ -z "$SETUP_ROOT" ]; then
+  export SETUP_ROOT=$HOME/.setup
+fi
+source $SETUP_ROOT/try.sh
 
-# ./.setup/Homebrew/install.sh
-# ./.setup/Atom/install.sh
+try zsh zsh/setup.sh
+try zsh vim/setup.sh
+try zsh git/setup.sh
+try zsh tmux/setup.sh
