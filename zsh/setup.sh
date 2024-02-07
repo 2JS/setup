@@ -7,7 +7,7 @@ ln -fs $SETUP_ZSH/zshrc.zsh $HOME/.zshrc
 
 # install Oh My Zsh
 echo "Installing Oh My Zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --keep-zshrc"
 
 # install powerlevel10k theme
 echo "Installing romkatv/powerlevel10k theme"
