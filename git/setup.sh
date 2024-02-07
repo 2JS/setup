@@ -1,3 +1,5 @@
 #!bash
 
-ln -s ~/.setup/git/gitconfig ~/.gitconfig
+if [ "$GITHUB_ACTIONS" != "true" ]; then
+  ln -s $SETUP_ROOT/git/gitconfig ~/.gitconfig
+fi
