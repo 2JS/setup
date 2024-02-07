@@ -9,6 +9,7 @@ fi
 if [ "$(uname)" == "Darwin" ]; then
   brew install zsh
 elif [ "$(uname)" == "Linux" ]; then
+  sudo apt-get update -y
   sudo apt-get install -y zsh
 else
   echo "Unknown operating system"
