@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 if [ -z "$SETUP_ROOT" ]; then
   export SETUP_ROOT=$HOME/.setup
 fi
