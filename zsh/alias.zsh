@@ -12,10 +12,10 @@ alias dclf='docker-compose logs -f'
 # docker-machine shortcuts
 alias dma='docker-machine'
 
-# exa, powerful ls alternative
-alias ls='exa -h'
-alias la='exa -ah'
-alias ll='exa -lh'
-alias l='exa -lha'
+# eza, powerful ls alternative
+alias ls='eza -h'
+alias la='eza -ah'
+alias ll='eza -lh'
+alias l='eza -lha'
 
 alias o='open'
