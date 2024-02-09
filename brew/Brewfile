@@ -29,7 +29,7 @@ cask "thingsmacsandboxhelper"
 cask "timemachineeditor"
 cask "typora"
 
-# mas "Amphetamine", id: 937984704
+mas "Amphetamine", id: 937984704
 mas "Fantastical", id: 975937182
 # mas "isHUD", id: 484757536
 mas "KakaoTalk", id: 869223134
