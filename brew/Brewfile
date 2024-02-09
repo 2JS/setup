@@ -8,19 +8,14 @@ tap "homebrew/cask-versions"
 # Personal
 brew "mas"
 
-cask "aerial" # Screen Saver.
-# cask "alfred"
-# cask "airfoil"
-# cask "airserver"
+cask "aerial"
 cask "bartender"
 cask "betterdisplay"
 cask "bettertouchtool"
 # cask "cheatsheet"
-# cask "ckan"
 cask "discord"
 cask "kawa"
 cask "minecraft"
-# cask "mono-mdk" # ckan dependency
 cask "hazeover"
 cask "mendeley"
 cask "monitorcontrol"
@@ -33,22 +28,12 @@ cask "steam"
 cask "thingsmacsandboxhelper"
 cask "timemachineeditor"
 cask "typora"
-# cask "rectangle"
-# cask "rocket"
-# cask "virtualbox"
-# cask "vlc"
-# cask "quitter"
 
 # mas "Amphetamine", id: 937984704
-# mas "Between", id: 1320741520
 mas "Fantastical", id: 975937182
 # mas "isHUD", id: 484757536
 mas "KakaoTalk", id: 869223134
-# mas "Microsoft To Do", id: 1274495053
-# mas "Monit", id: 1014850245
-# mas "Paste - Clipboard Manager", id: 967805235
 mas "Slack", id: 803453959
-# mas "Spark", id: 1176895641
 # mas "Speedtest", id: 1153157709
 mas "The Unarchiver", id: 425424353
 mas "Things 3", id: 904280696
@@ -62,7 +47,6 @@ brew "asciinema"
 brew "bat"
 brew "cocoapods"
 brew "direnv"
-# brew "docker"
 brew "dvc"
 brew "eza"
 brew "fastlane"
@@ -103,10 +87,7 @@ brew "yarn"
 brew "zsh"
 
 # cask "aldente"
-# cask "brave-browser"
-# cask "dash"
 cask "docker"
-# cask "figma"
 cask "github"
 # cask "gitkraken"
 cask "google-chrome"
@@ -114,23 +95,14 @@ cask "google-cloud-sdk"
 cask "gpg-suite"
 cask "insomnia"
 cask "iterm2"
-# cask "java6"
 # cask "jetbrains-toolbox"
-# cask "logisim"
 cask "netron"
 cask "notion"
 # cask "openvpn-connect"
 cask "sequel-pro"
 # cask "sf-symbols"
-# cask "sourcetree"
-# cask "vagrant"
 cask "visual-studio-code"
 cask "wineskin"
-# cask "wireshark"
-# cask "zoom"
-
-# mas "2Icon", id: 1049625579
-# mas "Octotree Pro", id: 1457450145
 
 # Fonts
 tap "homebrew/cask-fonts"
