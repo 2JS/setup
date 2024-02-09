@@ -142,6 +142,3 @@ cask "font-nanum-gothic"
 cask "font-new-york"
 cask "font-noto-sans"
 cask "font-noto-sans-cjk"
-
-tap "gerrit/homebrew-fonts-sanfrancisco"
-cask "font-sanfrancisco"
