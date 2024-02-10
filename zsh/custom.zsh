@@ -13,7 +13,7 @@ source $SETUP/zsh/functions/peco-history.zsh
 # export GOPATH=$HOME/Developer/Go
 # export GOBIN=$GOPATH/bin
 
-export PATH="$PATH:/opt/homebrew/bin"
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$SETUP/bin"
 # export EDITOR="vim"
