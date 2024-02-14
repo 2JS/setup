@@ -12,8 +12,6 @@
 	gpgsign = true
 [tag]
 	forceSignAnnotated = true
-[core]
-	excludesFile = ~/.setup/git/gitignore
 [rebase]
 	autostash = true
 [init]

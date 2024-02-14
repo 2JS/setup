@@ -1,5 +1,6 @@
 #!/bin/sh
 
 if [ "$GITHUB_ACTIONS" != "true" ]; then
-  ln -s $SETUP_ROOT/git/gitconfig ~/.gitconfig
+  git config --global --add include.path $SETUP_ROOT/git/gitconfig
+  git config --global core.excludesfile $SETUP_ROOT/git/gitignore
 fi
