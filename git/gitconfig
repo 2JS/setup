@@ -1,20 +1,20 @@
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[user]
-	name = Lee, Jun Seok
-	email = lego3410@gmail.com
-[pull]
-	rebase = true
 [commit]
 	gpgsign = true
-[tag]
-	forceSignAnnotated = true
-[rebase]
-	autostash = true
-[init]
-	defaultBranch = main
 [fetch]
 	prune = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	process = git-lfs filter-process
+	required = true
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[rebase]
+	autostash = true
+[tag]
+	forceSignAnnotated = true
+[user]
+	email = lego3410@gmail.com
+	name = Lee, Jun Seok
