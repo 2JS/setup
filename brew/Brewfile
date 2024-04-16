@@ -9,6 +9,7 @@ tap "homebrew/cask-versions"
 brew "mas"
 
 cask "aerial"
+cask "arc"
 cask "bartender"
 cask "betterdisplay"
 cask "bettertouchtool"
@@ -30,7 +31,7 @@ cask "timemachineeditor"
 cask "typora"
 
 mas "Amphetamine", id: 937984704
-mas "Fantastical", id: 975937182
+# mas "Fantastical", id: 975937182
 # mas "isHUD", id: 484757536
 mas "KakaoTalk", id: 869223134
 mas "Slack", id: 803453959
@@ -46,6 +47,7 @@ brew "act"
 brew "asciinema"
 brew "bat"
 brew "cocoapods"
+brew "csvlens"
 brew "defaultbrowser"
 brew "direnv"
 brew "dvc"
@@ -69,6 +71,7 @@ brew "openjdk"
 brew "openssl"
 # brew "openvpn"
 brew "peco"
+brew "pre-commit"
 brew "pstree"
 brew "pyenv-virtualenv"
 brew "python"
@@ -77,7 +80,10 @@ brew "python@3.8"
 brew "python@3.9"
 brew "python@3.10"
 brew "python@3.11"
+brew "ruff"
 # brew "rust" # use rustup instead of homebrew formula
+brew "swiftformat"
+brew "swiftgen"
 brew "swiftlint"
 brew "terraform"
 brew "thefuck"
