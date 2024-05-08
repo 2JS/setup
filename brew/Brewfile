@@ -108,7 +108,7 @@ cask "netron"
 cask "notion"
 # cask "openvpn-connect"
 cask "sequel-pro"
-# cask "sf-symbols"
+cask "sf-symbols"
 cask "visual-studio-code"
 cask "wineskin"
 
