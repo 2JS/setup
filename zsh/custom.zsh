@@ -10,8 +10,8 @@ source $SETUP/zsh/functions/edit-command-line.zsh
 source $SETUP/zsh/functions/peco-history.zsh
 
 # Setting GOPATH
-# export GOPATH=$HOME/Developer/Go
-# export GOBIN=$GOPATH/bin
+export GOPATH=$HOME/.go
+export PATH="$PATH:$GOPATH/bin"
 
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
