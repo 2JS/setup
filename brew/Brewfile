@@ -2,7 +2,6 @@
 # Some large apps such as Final Cut Pro X is omitted.
 
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-versions"
 
 # Personal
