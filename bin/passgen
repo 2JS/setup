@@ -1,0 +1,7 @@
+#!python3
+import sys
+import random
+
+length = int(sys.argv[1]) if len(sys.argv) > 1 else 32
+charset = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+print(''.join(random.choices(charset, k=length)), end='')
