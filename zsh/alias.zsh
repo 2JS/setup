@@ -6,7 +6,7 @@ alias l='eza -lha'
 
 alias o='open'
 
-alias tfa='terraform apply -parallelism 32'
-alias tfaa='terraform apply -parallelism 32 -auto-approve'
-alias tfd='terraform destroy -parallelism 32'
+alias tfa='terraform apply -parallelism 100'
+alias tfaa='terraform apply -parallelism 100 -auto-approve'
+alias tfd='terraform destroy -parallelism 100'
 alias tff='terraform fmt -recursive'
