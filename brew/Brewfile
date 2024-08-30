@@ -114,7 +114,7 @@ cask "netron"
 cask "notion"
 cask "sf-symbols"
 cask "tuist"
-cask "visual-studio-code"
+# cask "visual-studio-code"
 cask "warp"
 cask "wineskin"
 
