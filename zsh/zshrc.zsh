@@ -80,15 +80,18 @@ plugins=(
 	zsh-autosuggestions
 	colorize
 	common-aliases
+	direnv
 	docker
 	docker-compose
 	fasd
 	fast-syntax-highlighting
 	gcloud
+	gh
 	git
 	history
 	terraform
 	vscode
+	yarn
 )
 
 autoload -U compinit && compinit
@@ -134,4 +137,3 @@ test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iter
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
