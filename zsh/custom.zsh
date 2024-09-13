@@ -39,3 +39,5 @@ export GPG_TTY=$TTY
 eval "$(jump shell)"
 
 export PAGER=bat
+export MANPAGER="sh -c 'col -bx | bat --language man --plain'"
+export BAT_CONFIG_PATH="$SETUP/bat/config"
