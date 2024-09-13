@@ -51,6 +51,7 @@ brew "bat"
 brew "cocoapods"
 brew "corepack" # for yarn
 brew "csvlens"
+brew "git-delta"
 brew "direnv"
 brew "dvc"
 brew "eza"

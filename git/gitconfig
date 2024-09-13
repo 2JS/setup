@@ -1,5 +1,14 @@
 [commit]
 	gpgsign = true
+[core]
+	pager = delta
+[delta]
+	dark = true
+	line-numbers = true
+	navigate = true
+	side-by-side = true
+[diff]
+	colorMoved = default
 [fetch]
 	prune = true
 [filter "lfs"]
@@ -9,6 +18,10 @@
 	smudge = git-lfs smudge -- %f
 [init]
 	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only --features=interactive
+[merge]
+	conflictstyle = diff3
 [pull]
 	rebase = true
 [push]
