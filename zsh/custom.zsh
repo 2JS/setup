@@ -37,3 +37,5 @@ export GPG_TTY=$TTY
 
 # jump
 eval "$(jump shell)"
+
+export PAGER=bat
