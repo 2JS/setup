@@ -5,6 +5,7 @@ alias ll='eza -lh'
 alias l='eza -lha'
 
 alias o='open'
+alias b='bat'
 
 alias tfa='terraform apply -parallelism 100'
 alias tfaa='terraform apply -parallelism 100 -auto-approve'
