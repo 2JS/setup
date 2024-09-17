@@ -53,7 +53,7 @@ brew "corepack" # for yarn
 brew "csvlens"
 brew "git-delta"
 brew "direnv"
-brew "dvc"
+# brew "dvc" # use pip version
 brew "eza"
 brew "fastlane"
 brew "firebase-cli"
