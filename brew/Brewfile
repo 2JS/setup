@@ -85,6 +85,7 @@ brew "python@3.9"
 brew "python@3.10"
 brew "python@3.11"
 brew "python@3.12"
+brew "sq"
 brew "uv"
 brew "ruff"
 # brew "rust" # use rustup instead of homebrew formula
