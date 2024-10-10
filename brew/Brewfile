@@ -96,6 +96,7 @@ brew "thefuck"
 brew "tig"
 brew "tmux"
 brew "watchman"
+brew "wget"
 brew "vim"
 brew "zsh"
 
