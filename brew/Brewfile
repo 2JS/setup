@@ -115,7 +115,6 @@ cask "sf-symbols"
 cask "tuist"
 # cask "visual-studio-code"
 cask "warp"
-cask "wineskin"
 
 # Fonts
 tap "homebrew/cask-fonts"
