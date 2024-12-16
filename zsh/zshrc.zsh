@@ -89,6 +89,7 @@ plugins=(
 	gh
 	git
 	history
+	nvm
 	terraform
 	vscode
 	yarn
