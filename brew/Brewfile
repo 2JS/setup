@@ -92,6 +92,7 @@ brew "sq"
 brew "uv"
 brew "ruff"
 # brew "rust" # use rustup instead of homebrew formula
+brew "starship"
 brew "swiftformat"
 brew "swiftgen"
 brew "swiftlint"
