@@ -50,8 +50,9 @@ disabled = true      # Disabled by default
 [directory]
 style = "bg:blue"
 format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = ""
+truncation_length = 5
+truncate_to_repo = false
+fish_style_pwd_dir_length = 3
 
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
@@ -91,7 +92,7 @@ format = '[ $branch ]($style)'
 
 [git_status]
 style = "bg:yellow fg:black"
-format = '([ $ahead_behind$all_status ]($style))'
+format = '([$ahead_behind ](bg:green fg:black))([$all_status ]($style))'
 ahead = "⇡$count"
 behind = "⇣$count"
 diverged = "±"
