@@ -2,7 +2,11 @@ format = """
 $hostname\
 $directory\
 $git_branch\
-$git_status\
+$git_status \
+"""
+
+right_format = """
+$cmd_duration\
 $c\
 $elixir\
 $elm\
@@ -15,11 +19,6 @@ $nodejs\
 $nim\
 $rust\
 $scala\
-[ ](fg:#33658A)\
-"""
-
-right_format = """
-$cmd_duration\
 $docker_context\
 $time\
 """
