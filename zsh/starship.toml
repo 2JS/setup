@@ -95,6 +95,7 @@ format = '([$ahead_behind ](bg:green fg:black))([$all_status ]($style))'
 ahead = "⇡$count"
 behind = "⇣$count"
 diverged = "⇡$ahead_count⇣$behind_count"
+deleted = " -$count"
 untracked = " ?$count"
 modified = " !$count"
 staged = " +$count"
