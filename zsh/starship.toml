@@ -100,6 +100,7 @@ untracked = " ?$count"
 modified = " !$count"
 staged = " +$count"
 stashed = " *$count"
+renamed = " »$count"
 
 [golang]
 symbol = " "
