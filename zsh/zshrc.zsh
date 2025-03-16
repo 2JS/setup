@@ -140,3 +140,8 @@ source $HOME/.setup/zsh/custom.zsh
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# Auto-Warpify
+if [[ -n $SSH_CLIENT ]]; then
+  printf 'P$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh", "uname": "Darwin" }}œ'
+fi;
