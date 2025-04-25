@@ -1,8 +1,8 @@
 # eza, powerful ls alternative
-alias ls='eza -h'
-alias la='eza -ah'
-alias ll='eza -lh'
-alias l='eza -lha'
+alias ls='eza --header'
+alias la='eza --git --header --all'
+alias ll='eza --git --header --long'
+alias l='eza --git --header --long --all'
 
 alias o='open'
 alias b='bat'
