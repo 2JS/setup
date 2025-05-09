@@ -7,6 +7,7 @@ alias l='eza --git --header --long --all'
 alias o='open'
 alias b='bat'
 alias c='cursor'
+alias z='zed'
 
 alias tfa='terraform apply -parallelism 100'
 alias tfaa='terraform apply -parallelism 100 -auto-approve'
