@@ -8,4 +8,5 @@
   },
   "editor.wordWrap": "bounded",
   "editor.rulers": [80],
+  "editor.fontSize": 11
 }
