@@ -55,6 +55,7 @@ brew "git-delta"
 brew "direnv"
 # brew "dvc" # use pip version
 brew "eza"
+brew "f2"
 brew "fastlane"
 # brew "firebase-cli"
 brew "fzf"
