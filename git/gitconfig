@@ -1,6 +1,7 @@
 [commit]
 	gpgsign = true
 [core]
+	ignorecase = false
 	pager = delta
 [delta]
 	dark = true
