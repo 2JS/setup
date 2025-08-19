@@ -8,5 +8,7 @@
   },
   "editor.wordWrap": "bounded",
   "editor.rulers": [80],
-  "editor.fontSize": 11
+  "editor.fontSize": 11,
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.experimental.showMoves": true
 }

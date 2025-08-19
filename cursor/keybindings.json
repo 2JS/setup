@@ -199,11 +199,63 @@
   {
     "key": "tab",
     "command": "editor.action.indentLines",
-    "when": "editorTextFocus && !editorReadonly && vim.mode == 'Visual'"
+    "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'Visual Line')"
   },
   {
     "key": "shift+tab",
     "command": "editor.action.outdentLines",
-    "when": "editorTextFocus && !editorReadonly && vim.mode == 'Visual'"
-  }
+    "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'Visual Line')"
+  },
+  {
+    "key": "shift+9",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'Visual Line')",
+    "args": {
+      "snippet": "($TM_SELECTED_TEXT)"
+    }
+  },
+  {
+    "key": "[",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'Visual Line')",
+    "args": {
+      "snippet": "[$TM_SELECTED_TEXT]"
+    }
+  },
+  {
+    "key": "shift+[",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'Visual Line')",
+    "args": {
+      "snippet": "{$TM_SELECTED_TEXT}"
+    }
+  },
+  {
+    "key": "'",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'Visual Line')",
+    "args": {
+      "snippet": "'$TM_SELECTED_TEXT'"
+    }
+  },
+  {
+    "key": "shift+'",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'Visual Line')",
+    "args": {
+      "snippet": "\"$TM_SELECTED_TEXT\""
+    }
+  },
+  {
+    "key": "cmd+e",
+    "command": "composerMode.background"
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\\\r\n"
+    },
+    "when": "terminalFocus"
+}
 ]
