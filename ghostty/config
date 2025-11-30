@@ -2,5 +2,8 @@ theme = Brogrammer
 background = black
 background-opacity = 0.8
 
+font-size = 11
+font-family = "Monoid"
 font-family = "MesloLGLDZ Nerd Font Mono"
 font-family = "D2Coding"
+font-feature = "-calt"
