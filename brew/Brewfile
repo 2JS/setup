@@ -121,6 +121,7 @@ cask "warp"
 
 # Fonts
 tap "homebrew/cask-fonts"
+cask "font-d2coding"
 cask "font-monoid"
 cask "font-gugi"
 cask "font-linux-libertine"
