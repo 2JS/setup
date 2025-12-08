@@ -1,0 +1,17 @@
+{
+  "hideHud": true,
+  "ignoreKeyboardLayout": true,
+  "scrollStepSize": 100,
+  "grabBackFocus": true,
+  "settingsVersion": "2.3.1",
+  "exclusionRules": [
+    {
+      "passKeys": "tT/bxXoO",
+      "pattern": "*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://renzorlive.github.io/*"
+    }
+  ]
+}
