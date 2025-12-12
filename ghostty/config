@@ -7,3 +7,5 @@ font-family = "Monoid"
 font-family = "MesloLGLDZ Nerd Font Mono"
 font-family = "D2Coding"
 font-feature = "-calt"
+
+shell-integration-features = ssh-terminfo,ssh-env
