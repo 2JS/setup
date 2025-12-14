@@ -19,3 +19,7 @@ alias gfod='git fetch origin develop:develop'
 
 alias ts='tailscale'
 alias tss='tailscale status'
+
+alias tma='tmux attach'
+alias tmat='tmux attach -t'
+alias tmls='tmux ls'
