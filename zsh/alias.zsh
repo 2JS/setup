@@ -16,3 +16,6 @@ alias tfsl='terraform state list | sort'
 
 alias gfom="git fetch origin `git_main_branch`:`git_main_branch`"
 alias gfod='git fetch origin develop:develop'
+
+alias ts='tailscale'
+alias tss='tailscale status'
