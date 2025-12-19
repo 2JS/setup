@@ -9,6 +9,10 @@
   "editor.wordWrap": "bounded",
   "editor.rulers": [80],
   "editor.fontSize": 11,
-  "diffEditor.renderSideBySide": false,
-  "diffEditor.experimental.showMoves": true
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.experimental.showMoves": true,
+  "editor.accessibilitySupport": "off",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

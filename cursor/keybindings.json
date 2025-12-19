@@ -245,10 +245,6 @@
     "args": {
       "snippet": "\"$TM_SELECTED_TEXT\""
     }
-  },
-  {
-    "key": "cmd+e",
-    "command": "composerMode.background"
 },
 {
     "key": "shift+enter",
@@ -257,5 +253,5 @@
         "text": "\\\r\n"
     },
     "when": "terminalFocus"
-}
+},
 ]
