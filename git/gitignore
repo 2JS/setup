@@ -61,6 +61,6 @@ tags
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,macos,direnv
 
-.claude/
-CLAUDE.local.md
+**/CLAUDE.local.md
+**/.claude/settings.local.json
 .playwright-mcp/
