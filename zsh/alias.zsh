@@ -14,7 +14,7 @@ alias tfd='terraform destroy -parallelism 100'
 alias tff='terraform fmt -recursive'
 alias tfsl='terraform state list | sort'
 
-alias gfom="git fetch origin `git_main_branch`:`git_main_branch`"
+alias gfom='git fetch origin `git_main_branch`:`git_main_branch`'
 alias gfod='git fetch origin develop:develop'
 
 alias ts='tailscale'
