@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+if ! command -v tmux &> /dev/null
+then
+	echo "tmux does not exist"
+	exit
+fi
+
+if [ -n "$TMUX" ]
+then
+	echo "already in tmux"
+	exit
+fi
+
+tmux new-session -d 'claude --continue || claude'
+tmux split-window -v
+tmux select-pane -t 0
+tmux split-window -h 'codex --full-auto --search resume'
+tmux select-pane -t 0
+tmux attach
