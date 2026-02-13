@@ -23,3 +23,7 @@ alias tss='tailscale status'
 alias tma='tmux attach'
 alias tmat='tmux attach -t'
 alias tmls='tmux ls'
+
+alias cl='claude'
+alias clc='claude --continue'
+alias co='codex --search resume'
