@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+if ! command -v tmux &> /dev/null
+then
+	echo "tmux does not exist"
+	exit
+fi
+
+if [ -n "$TMUX" ]
+then
+	echo "already in tmux"
+	exit
+fi
+
+if ! tmux attach -t vk 2>/dev/null
+then
+	tmux new-session -d -s vk 'PORT=8081 bunx vibe-kanban'
+	tmux attach -t vk
+fi
