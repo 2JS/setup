@@ -14,6 +14,6 @@ fi
 
 if ! tmux attach -t vk 2>/dev/null
 then
-	tmux new-session -d -s vk 'PORT=8081 bunx vibe-kanban'
+	tmux new-session -d -s vk 'HOST=0.0.0.0 PORT=8081 bunx vibe-kanban'
 	tmux attach -t vk
 fi
