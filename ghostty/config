@@ -9,3 +9,5 @@ font-family = "D2Coding"
 font-feature = "-calt"
 
 shell-integration-features = ssh-terminfo,ssh-env
+
+notify-on-command-finish = unfocused
