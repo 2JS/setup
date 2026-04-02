@@ -1,3 +1,8 @@
+**/CLAUDE.local.md
+**/.claude/settings.local.json
+.playwright-mcp/
+.agent/
+
 # Created by https://www.toptal.com/developers/gitignore/api/vim,macos,direnv
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,macos,direnv
 
@@ -60,7 +65,3 @@ tags
 [._]*.un~
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,macos,direnv
-
-**/CLAUDE.local.md
-**/.claude/settings.local.json
-.playwright-mcp/
