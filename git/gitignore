@@ -2,6 +2,7 @@
 **/.claude/settings.local.json
 .playwright-mcp/
 .agent/
+.worktree/
 
 # Created by https://www.toptal.com/developers/gitignore/api/vim,macos,direnv
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,macos,direnv
