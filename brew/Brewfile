@@ -103,7 +103,7 @@ brew "zig"
 
 cask "aldente"
 cask "claude"
-cask "claude-code"
+cask "claude-code@latest"
 cask "codex"
 cask "ghostty"
 cask "github"
