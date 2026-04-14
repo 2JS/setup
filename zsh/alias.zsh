@@ -24,6 +24,6 @@ alias tma='tmux attach'
 alias tmat='tmux attach -t'
 alias tmls='tmux ls'
 
-alias cl='claude'
-alias clc='claude --continue'
+alias cld='cl --dangerously-skip-permissions'
+alias clw='claude --dangerously-skip-permissions --worktree --tmux'
 alias co='codex --search resume'
