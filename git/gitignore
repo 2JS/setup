@@ -3,6 +3,8 @@
 .playwright-mcp/
 .agent/
 .worktree/
+.claude/worktrees
+.claude/scheduled_tasks.lock
 
 # Created by https://www.toptal.com/developers/gitignore/api/vim,macos,direnv
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,macos,direnv
