@@ -5,6 +5,7 @@
 .worktree/
 .claude/worktrees
 .claude/scheduled_tasks.lock
+.claude/last_user_prompt_time
 
 # Created by https://www.toptal.com/developers/gitignore/api/vim,macos,direnv
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,macos,direnv
