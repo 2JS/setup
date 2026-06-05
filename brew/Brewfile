@@ -117,7 +117,7 @@ cask "orbstack"
 cask "postman"
 cask "sf-symbols"
 cask "tuist"
-cask "unity-hub"
+# cask "unity-hub"
 cask "visual-studio-code"
 
 # Fonts
