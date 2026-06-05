@@ -98,8 +98,8 @@ brew "watchman"
 brew "wget"
 brew "vim"
 brew "xcodes"
-brew "zsh"
 brew "zig"
+brew "zsh"
 
 cask "aldente"
 cask "claude"
@@ -119,6 +119,7 @@ cask "sf-symbols"
 cask "tuist"
 # cask "unity-hub"
 cask "visual-studio-code"
+cask "zed"
 
 # Fonts
 cask "font-d2coding"
