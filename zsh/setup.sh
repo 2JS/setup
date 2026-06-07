@@ -10,10 +10,8 @@ echo "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --keep-zshrc"
 
 # install powerlevel10k theme
-echo "Installing romkatv/powerlevel10k theme"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-ln -s $SETUP_ZSH/p10k.zsh $HOME/.p10k.zsh
+# echo "Installing romkatv/powerlevel10k theme"
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # install Oh My Zsh plugins
 sh $SETUP_ZSH/om.zsh
