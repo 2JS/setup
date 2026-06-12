@@ -101,7 +101,6 @@ brew "xcodes"
 brew "zig"
 brew "zsh"
 
-cask "aldente"
 cask "claude"
 cask "claude-code@latest"
 cask "codex"
