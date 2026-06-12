@@ -6,6 +6,11 @@ mkdir -p "$ZSH_CACHE_DIR/completions" 2>/dev/null
 
 fpath=("$ZSH_CACHE_DIR/completions" "$ZSH_PLUGIN_DIR/zsh-completions/src" $fpath)
 
+zstyle ':completion:*' matcher-list \
+  'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' \
+  'r:|=*' \
+  'l:|=* r:|=*'
+
 autoload -Uz compinit
 if [[ -n "$ZSH_CACHE_DIR/.zcompdump"(#qNmh-24) ]]; then
   compinit -C -d "$ZSH_CACHE_DIR/.zcompdump"
