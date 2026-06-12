@@ -40,7 +40,6 @@ mas "Things 3", id: 904280696
 
 # Development
 # tap "homebrew/command-not-found"
-tap "gcenx/wine"
 tap "hashicorp/tap"
 tap "oven-sh/bun"
 
