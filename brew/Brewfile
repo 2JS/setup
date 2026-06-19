@@ -5,6 +5,7 @@ tap "homebrew/bundle"
 
 # Personal
 brew "mas"
+brew "mole"
 
 cask "1password"
 # cask "aerial"
