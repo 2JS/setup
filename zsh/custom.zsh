@@ -8,17 +8,6 @@ source $SETUP/zsh/functions/edit-command-line.zsh
 # ref: https://www.44bits.io/ko/post/incremental-search-tool-peco
 source $SETUP/zsh/functions/peco-history.zsh
 
-# Setting GOPATH
-export GOPATH=$HOME/.go
-export PATH="$PATH:$GOPATH/bin"
-
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:/opt/homebrew/opt/rustup/bin"
-export PATH="$PATH:$SETUP/bin"
-# export EDITOR="vim"
-
 # ref: https://github.com/Homebrew/homebrew-command-not-found
 # if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
