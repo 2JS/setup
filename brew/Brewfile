@@ -98,7 +98,6 @@ brew "wget"
 brew "vim"
 brew "xcodes"
 brew "zig"
-brew "zsh"
 
 cask "claude"
 cask "claude-code@latest"
