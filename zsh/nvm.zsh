@@ -15,7 +15,7 @@ _zsh_load_nvm() {
     nvm_completion="$nvm_homebrew/etc/bash_completion.d/nvm"
   fi
 
-  [[ -s "$nvm_script" ]] && source "$nvm_script" --no-use
+  [[ -s "$nvm_script" ]] && source "$nvm_script"
 
   if [[ -s "$nvm_completion" ]]; then
     autoload -U +X bashcompinit && bashcompinit
