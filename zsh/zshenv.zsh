@@ -12,3 +12,5 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:/opt/homebrew/opt/rustup/bin"
 export PATH="$PATH:$SETUP/bin"
 export PATH="$PATH:$HOME/.maestro/bin"
+
+source $HOME/.setup/zsh/nvm.zsh
