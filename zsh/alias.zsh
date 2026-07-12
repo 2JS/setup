@@ -28,3 +28,5 @@ alias tmls='tmux ls'
 alias cld='cl --dangerously-skip-permissions'
 alias clw='claude --dangerously-skip-permissions --worktree --tmux'
 alias co='codex --search resume'
+
+alias pc='process-compose'
